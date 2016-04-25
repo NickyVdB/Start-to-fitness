@@ -1,0 +1,14 @@
+body {	font-family:verdana,sans-serif;
+     }
+	 
+h1 {text-decoration:underline;}
+
+p {margin-left:50px;}
+
+.accent {color:white;
+	background-color:black;
+	text-transform:uppercase;}
+	
+#verbeter {font-weight:bold;
+	color:#f04c25;
+	background-color:white;}

@@ -1,0 +1,25 @@
+body {background-color:#eee;
+	color:white;
+	font-family:arial,sans-serif;}
+
+.grid-container {background-color:white;
+	color:black;
+	border-radius:15px;
+	box-shadow: 3px 3px 8px -4px rgba(0,0,0,0.75);}
+
+.kleur {line-height:5;
+		text-align:center;}
+
+#kleur1 {color: white;
+		background-color: red;}
+			
+#kleur2 {color: white;
+		background-color: orange;}
+			
+#kleur3 {color: black;
+		background-color: yellow;}
+			
+#kleur4 {color: white;
+		background-color: #009585;}
+			
+
