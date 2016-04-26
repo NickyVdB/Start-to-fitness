@@ -1,0 +1,112 @@
+body {
+  background-color: #0e83cd;
+}
+
+#container {
+  height: 140px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  width: 248px;
+}
+
+#container div {
+  position: absolute;
+    
+}
+
+
+
+
+ .donut {
+  animation-name: donut;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: rgba(255, 255, 255, 0.2);
+ background-image:url("img/donut.png");
+    background-size: cover;
+  bottom: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+@-webkit-keyframes donut {
+  0% {
+    top: 0;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 80px;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    top: 160px;
+  }
+}
+.donut:nth-child(1) {
+  left: 200px;
+  -webkit-animation-delay: 11.19632ms;
+  -webkit-animation-duration: 1300ms;
+  -webkit-transform: scale(1.1);
+}
+
+.donut:nth-child(2) {
+  left: 158px;
+  -webkit-animation-delay: 0.32955ms;
+  -webkit-animation-duration: 700ms;
+  -webkit-transform: scale(1);
+}
+
+.donut:nth-child(3) {
+  left: 83px;
+  -webkit-animation-delay: 5.69047ms;
+  -webkit-animation-duration: 600ms;
+  -webkit-transform: scale(0.8);
+}
+
+.donut:nth-child(4) {
+  left: 7px;
+  -webkit-animation-delay: 11.11925ms;
+  -webkit-animation-duration: 900ms;
+  -webkit-transform: scale(1.2);
+}
+
+.donut:nth-child(5) {
+  left: 17px;
+  -webkit-animation-delay: 16.72459ms;
+  -webkit-animation-duration: 900ms;
+  -webkit-transform: scale(1);
+}
+
+.donut:nth-child(6) {
+  left: 175px;
+  -webkit-animation-delay: 22.25157ms;
+  -webkit-animation-duration: 700ms;
+  -webkit-transform: scale(0.7);
+}
+
+.donut:nth-child(7) {
+  left: 129px;
+  -webkit-animation-delay: 27.13771ms;
+  -webkit-animation-duration: 1200ms;
+  -webkit-transform: scale(0.6);
+}
+.donut:nth-child(8) {
+  left: 60px;
+  -webkit-animation-delay: 27.13771ms;
+  -webkit-animation-duration: 1200ms;
+  -webkit-transform: scale(0.8);
+}
+.donut:nth-child(9) {
+  left: 230px;
+  -webkit-animation-delay: 27.13771ms;
+  -webkit-animation-duration: 1200ms;
+  -webkit-transform: scale(1);
+}
+#home{
+    color:white;
+    font-size: 700%;
+    margin-left: 0%;
+    ;
+}
