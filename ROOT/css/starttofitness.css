@@ -38,11 +38,19 @@ section {
 	display:block;
 }
 
+
 /*animatie pagina voeding*/
-@keyframes cupcake{
+@keyframes verdwijnen { /*die "draaien" kies je zelf als naam*/
 	to{
-		transform:rotate(360deg);
-		/*transform:translate(0px,0px)*/
-		}
+    transform:translate(-500px,0px)
 	}
-.cupcake:hover {animation-name:cupcake;}
+} /*keyframes zijn de sleutelpunten in je animatie hier is dat dus enkel het ronddraaien*/
+
+.cupcake:hover {
+	animation-name:verdwijnen;
+	animation-duration:4s;
+	animation-timing-function:linear;
+	animation-iteration-count:1;
+  
+}
+
