@@ -36,3 +36,12 @@ header {
 section {
 	display:block;
 }
+
+/*animatie pagina voeding*/
+@keyframes cupcake{
+	to{
+		transform:rotate(360deg);
+		/*transform:translate(0px,0px)*/
+		}
+	}
+.cupcake:hover {animation-name:cupcake;}
