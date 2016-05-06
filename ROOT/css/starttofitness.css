@@ -2,7 +2,8 @@
 /* CSS Document */
 
 body {
-	background-color: rgba(0,149,133,0.5)
+	background-color: rgba(0,149,133,0.5);
+	margin:10px;
 }
 
 #inhoud {
@@ -40,6 +41,7 @@ section {
 	display:block;
 }
 
+<<<<<<< HEAD
 #containerlogo{width: 20%;
 float: left;}
 #containerlogo img{width : 100%}
@@ -62,3 +64,21 @@ margin-right: 15px;}
 h1{
     float:none;
 }
+=======
+
+/*animatie pagina voeding*/
+@keyframes verdwijnen { /*die "draaien" kies je zelf als naam*/
+	to{
+    transform:translate(-500px,0px)
+	}
+} /*keyframes zijn de sleutelpunten in je animatie hier is dat dus enkel het ronddraaien*/
+
+.cupcake:hover {
+	animation-name:verdwijnen;
+	animation-duration:4s;
+	animation-timing-function:linear;
+	animation-iteration-count:1;
+  
+}
+
+>>>>>>> origin/master
