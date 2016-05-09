@@ -5,6 +5,79 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* Scss Document */
+/* CSS Document */
+body {
+  background-color: rgba(0, 149, 133, 0.5);
+  margin: 10px; }
+
+#inhoud {
+  background-color: white;
+  color: black;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 0%; }
+
+nav ul {
+  list-style-type: none; }
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+  font-size: 20px;
+  width: 160px;
+  padding: 15px;
+  background-color: yellow;
+  color: black; }
+
+header {
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+  font-size: 15px; }
+
+section {
+  display: block; }
+
+#containerlogo {
+  width: 20%;
+  float: left; }
+
+#containerlogo img {
+  width: 100%; }
+
+aside {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 200%;
+  width: 45%;
+  float: left;
+  margin-top: 175px;
+  margin-left: 30px; }
+
+aside::before {
+  content: "\ÔÇ£";
+  font-size: 200%;
+  margin-left: -30px; }
+
+article {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+h1 {
+  float: none; }
+
+/*animatie pagina voeding*/
+@keyframes verdwijnen {
+  /*die "draaien" kies je zelf als naam*/
+  to {
+    transform: translate(-500px, 0px); } }
+/*keyframes zijn de sleutelpunten in je animatie hier is dat dus enkel het ronddraaien*/
+.cupcake:hover {
+  animation-name: verdwijnen;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1; }
+
 /*hebben we zelf ingevoerd*/
 /*die zullen altijd ge├»mplementeerd worden en kan niets dat overschrijven*/
 /*lettertypen, kleuren, breekpunten,... zie dus naar die file*/
