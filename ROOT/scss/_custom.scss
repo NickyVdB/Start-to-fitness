@@ -1,70 +1,72 @@
 /* Scss Document */
+
 @charset "utf-8";
 /* CSS Document */
 
 body {
-	background-color: rgba(0,149,133,0.5);
-	margin:10px;
+    background-color: rgba(0, 149, 133, 0.5);
+    margin: 10px;
 }
 
 /*opmaak navigatiebar*/
 #logo {
-  width: 100%; }
-
+    width: 100%;
+}
 .navbar ul {
-  text-decoration: none;
-  float: left; }
-
+    text-decoration: none;
+    float: left;
+}
 .navbar li {
-  float: left;
-  margin-right: 20px;
-  list-style-type: none;
-   }
-
+    float: left;
+    margin-right: 20px;
+    list-style-type: none;
+}
 .navbar-brand {
-  width: 15%; }
-.nav-link{
-    font-size:1.3em;
+    width: 15%;
+}
+.nav-link {
+    font-size: 1.3em;
     height: 100px;
     line-height: 100px;
 }
 
-section {
-	display:block;
+article {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
+section {
+    display: block;
+}
 
-
-aside{
-    color : rgba(0,0,0,0.5);
+aside {
+    color: rgba(0, 0, 0, 0.5);
     font-size: 200%;
     width: 40%;
     float: left;
     margin-top: 150px;
     margin-left: 30px;
-    margin-right:0;
-    background-color:green;
-  
+    margin-right: 0;
+    background-color: green;
 }
-aside::before{content: "\“";
-font-size: 200%;
-margin-left: -30px;}
-article{margin-left: 15px;
-margin-right: 15px;}
+aside::before {
+    content: "\“";
+    font-size: 200%;
+    margin-left: -30px;
+}
 
-h1{
-    float:none;
+h1 {
+    float: none;
 }
 
 /*opmaak footer*/
-.footer{background-color:lightgrey;
-line-height:60px;
-margin-top:90px;
-border:solid 5px transparent;
+.footer {
+    background-color: lightgrey;
+    line-height: 60px;
+    margin-top: 90px;
+    border: solid 5px transparent;
 }
-	
-.naarboven{border:solid 2px blue;
-		float:right;
+.naarboven {
+    border: solid 2px blue;
+    float: right;
 }
-
-
