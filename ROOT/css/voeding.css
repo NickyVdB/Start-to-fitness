@@ -10,18 +10,21 @@ padding:100px;}
 
 
 /*animatie pagina voeding*/
-@keyframes verdwijnen { 
+@keyframes veranderen { 
+	from{
+		background-image:url(../Images/Marijke/eatme.png);
+		}
 	to{
-    
+    	background-image:url(../Images/Marijke/carrot.png);
 	}
 } 
 
 .animatie:hover {
-	background-image:url(../Images/Marijke/carrot.png);
-	animation-name:verdwijnen;
-	animation-duration:4s;
+	animation-name:veranderen;
+	animation-duration:2s;
 	animation-iteration-count:1;
-  
+	animation-fill-mode: forwards;
+ 
 }
 
 /*opmaak footer*/
