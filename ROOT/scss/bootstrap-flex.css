@@ -17,35 +17,6 @@ body {
   margin-left: 10%;
   margin-top: 0%; }
 
-/*
-nav ul{
-	list-style-type: none;
-	
-}
-
-
-nav ul li a{
-	text-decoration:none;
-	display: block;
-	float:left;
-	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-	font-size:20px;
-	width:160px;
-	padding:15px;
-	background-color: yellow;
-	color: black;
-}
-
-header {
-	padding:10px; 
-	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-	font-size:15px;
-	
-	//HEAD
-#containerlogo{width: 20%;
-float: left;}
-#containerlogo img{width : 100%}
-}*/
 #logo {
   width: 100%; }
 
@@ -56,11 +27,15 @@ float: left;}
 .navbar li {
   float: left;
   margin-right: 20px;
-  list-style-type: none;
-  background: yellow; }
+  list-style-type: none; }
 
 .navbar-brand {
   width: 15%; }
+
+.nav-link {
+  font-size: 1.3em;
+  height: 100px;
+  line-height: 100px; }
 
 section {
   display: block; }
@@ -68,10 +43,12 @@ section {
 aside {
   color: rgba(0, 0, 0, 0.5);
   font-size: 200%;
-  width: 45%;
+  width: 40%;
   float: left;
-  margin-top: 175px;
-  margin-left: 30px; }
+  margin-top: 150px;
+  margin-left: 30px;
+  margin-right: 0;
+  background-color: green; }
 
 aside::before {
   content: "\ÔÇ£";
