@@ -14,54 +14,26 @@ body {
     margin-left: 10%;
     margin-top: 0%;
 }
-/*
-nav ul{
-	list-style-type: none;
-	
-}
 
+#logo {
+  width: 100%; }
 
-nav ul li a{
-	text-decoration:none;
-	display: block;
-	float:left;
-	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-	font-size:20px;
-	width:160px;
-	padding:15px;
-	background-color: yellow;
-	color: black;
-}
+.navbar ul {
+  text-decoration: none;
+  float: left; }
 
-header {
-	padding:10px; 
-	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-	font-size:15px;
-	
-	//HEAD
-#containerlogo{width: 20%;
-float: left;}
-#containerlogo img{width : 100%}
-}*/
+.navbar li {
+  float: left;
+  margin-right: 20px;
+  list-style-type: none;
+   }
 
-//header
-#logo
-{
-	width: 100%;
-}
-.navbar ul  {
-text-decoration:none;
-float:left;
-}
-
-.navbar li{float:left;
-margin-right:20px;
-list-style-type:none;
-background: yellow;
-}
-.navbar-brand 
-{
-	width : 15%;
+.navbar-brand {
+  width: 15%; }
+.nav-link{
+    font-size:1.3em;
+    height: 100px;
+    line-height: 100px;
 }
 
 section {
