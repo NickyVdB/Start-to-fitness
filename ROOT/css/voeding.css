@@ -9,7 +9,6 @@ background-size:cover;
 padding:100px;}
 
 
-
 /*animatie pagina voeding*/
 @keyframes verdwijnen { 
 	to{
@@ -24,3 +23,16 @@ padding:100px;}
 	animation-iteration-count:1;
   
 }
+
+/*opmaak footer*/
+.footer{background-color:lightgrey;
+line-height:60px;
+margin-top:90px;
+border:solid 5px transparent;
+}
+
+		
+.naarboven{border:solid 2px blue;
+		float:right;
+}
+
