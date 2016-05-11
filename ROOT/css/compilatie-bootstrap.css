@@ -10,13 +10,7 @@ body {
   background-color: rgba(0, 149, 133, 0.5);
   margin: 10px; }
 
-#inhoud {
-  background-color: white;
-  color: black;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 0%; }
-
+/*opmaak navigatiebar*/
 #logo {
   width: 100%; }
 
@@ -62,17 +56,16 @@ article {
 h1 {
   float: none; }
 
-/*animatie pagina voeding*/
-@keyframes verdwijnen {
-  /*die "draaien" kies je zelf als naam*/
-  to {
-    transform: translate(-500px, 0px); } }
-/*keyframes zijn de sleutelpunten in je animatie hier is dat dus enkel het ronddraaien*/
-.cupcake:hover {
-  animation-name: verdwijnen;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1; }
+/*opmaak footer*/
+.footer {
+  background-color: lightgrey;
+  line-height: 60px;
+  margin-top: 90px;
+  border: solid 5px transparent; }
+
+.naarboven {
+  border: solid 2px blue;
+  float: right; }
 
 /*hebben we zelf ingevoerd*/
 /*die zullen altijd ge├»mplementeerd worden en kan niets dat overschrijven*/
