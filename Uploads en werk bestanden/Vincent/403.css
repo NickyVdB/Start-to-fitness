@@ -117,11 +117,11 @@ p {
 
 
 #container {
-  height: 140px;
-  margin: 0px auto;
+  height: 120px;
+  margin: 0px 34%;
   overflow: hidden;
   position: relative;
-  width: 240px;
+  width: 110px;
   background-color:rgba(255, 255, 255, 0);
 }
 
@@ -162,65 +162,61 @@ margin-left: 0px;
   }
 }
 .donut:nth-child(1) {
-  left: 120px;
+  left: 20px;
   -webkit-animation-delay: 11.19632ms;
   -webkit-animation-duration: 1300ms;
-  -webkit-transform: scale(1.1);
+  -webkit-transform: scale(0.3);
 }
 
 .donut:nth-child(2) {
-  left: 158px;
+  left: 25px;
   -webkit-animation-delay: 0.32955ms;
   -webkit-animation-duration: 700ms;
-  -webkit-transform: scale(1);
+  -webkit-transform: scale(0.4);
 }
 
 .donut:nth-child(3) {
-  left: 83px;
+  left: 75px;
   -webkit-animation-delay: 5.69047ms;
   -webkit-animation-duration: 600ms;
-  -webkit-transform: scale(0.8);
+  -webkit-transform: scale(0.5);
 }
 
 .donut:nth-child(4) {
   left: 7px;
   -webkit-animation-delay: 11.11925ms;
   -webkit-animation-duration: 900ms;
-  -webkit-transform: scale(1.2);
+  -webkit-transform: scale(0.4);
 }
 
 .donut:nth-child(5) {
   left: 0px;
   -webkit-animation-delay: 16.72459ms;
   -webkit-animation-duration: 780ms;
-  -webkit-transform: scale(1);
+  -webkit-transform: scale(0.4);
 }
 
 .donut:nth-child(6) {
-  left: 160px;
+  left: 18px;
   -webkit-animation-delay: 22.25157ms;
   -webkit-animation-duration: 700ms;
-  -webkit-transform: scale(0.7);
+  -webkit-transform: scale(0.3);
 }
 
 .donut:nth-child(7) {
-  left: 129px;
+  left: 55px;
   -webkit-animation-delay: 27.13771ms;
   -webkit-animation-duration: 1200ms;
   -webkit-transform: scale(0.6);
 }
-.donut:nth-child(8) {
-  left: 60px;
-  -webkit-animation-delay: 27.13771ms;
-  -webkit-animation-duration: 1200ms;
-  -webkit-transform: scale(0.8);
-}
+
 
 
 #home{
     color:white;
-    font-size: 480%;
-    margin-left: 0%;
+    font-size: 240%;
+    margin-left: 0;
      text-align: center;
+    line-height : 80px;
     
 }
