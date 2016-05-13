@@ -69,8 +69,8 @@ h1 {
   border: solid 2px blue;
   float: right; }
 
-header {
-  font-family: 'Lobster', cursive , serif; }
+header h1 {
+  font-family: 'Lobster' , serif; }
 
 /*die zullen altijd ge├»mplementeerd worden en kan niets dat overschrijven*/
 /*lettertypen, kleuren, breekpunten,... zie dus naar die file*/
