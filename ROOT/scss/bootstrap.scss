@@ -5,7 +5,9 @@
  */
 
 // Core variables and mixins
-@import "custom";/*hebben we zelf ingevoerd*/
+/*zelf ingevoerde css*/
+@import "voeding";
+@import "custom";
 
 @import "variables";/*lettertypen, kleuren, breekpunten,... zie dus naar die file*/
 @import "mixins";
