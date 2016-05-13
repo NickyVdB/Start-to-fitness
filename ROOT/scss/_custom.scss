@@ -10,9 +10,9 @@ body {
 
 /*opmaak navigatiebar*/
 #logo {
-    width: 100%;
+    max-width: 40%;
 }
-.navbar ul {
+/*.navbar ul {
     text-decoration: none;
     float: left;
 }
@@ -30,6 +30,12 @@ body {
     line-height: 100px;
 }
 
+*/
+//menu logo verdwijnt bij hamburger
+@media (max-width: 765px) {
+    
+    #logo{display:none;}
+}
 article {
     margin-left: 15px;
     margin-right: 15px;
