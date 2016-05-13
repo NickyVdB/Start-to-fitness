@@ -4,19 +4,38 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/*zelf ingevoerde css*/
+/* CSS Document */
+.animatie {
+  width: 10%;
+  height: 10%;
+  background-image: url(../Images/Marijke/eatme.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px; }
+
+/*animatie pagina voeding*/
+@keyframes veranderen {
+  from {
+    background-image: url(../Images/Marijke/eatme.png); }
+  to {
+    background-image: url(../Images/Marijke/carrot.png); } }
+.animatie:hover {
+  animation-name: veranderen;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+h1 {
+  color: yellow; }
+
 /* Scss Document */
 /* CSS Document */
 body {
   background-color: rgba(0, 149, 133, 0.5);
   margin: 10px; }
 
-#inhoud {
-  background-color: white;
-  color: black;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 0%; }
-
+/*opmaak navigatiebar*/
 #logo {
   width: 100%; }
 
@@ -37,6 +56,10 @@ body {
   height: 100px;
   line-height: 100px; }
 
+article {
+  margin-left: 15px;
+  margin-right: 15px; }
+
 section {
   display: block; }
 
@@ -55,26 +78,20 @@ aside::before {
   font-size: 200%;
   margin-left: -30px; }
 
-article {
-  margin-left: 15px;
-  margin-right: 15px; }
-
 h1 {
   float: none; }
 
-/*animatie pagina voeding*/
-@keyframes verdwijnen {
-  /*die "draaien" kies je zelf als naam*/
-  to {
-    transform: translate(-500px, 0px); } }
-/*keyframes zijn de sleutelpunten in je animatie hier is dat dus enkel het ronddraaien*/
-.cupcake:hover {
-  animation-name: verdwijnen;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1; }
+/*opmaak footer*/
+.footer {
+  background-color: lightgrey;
+  line-height: 60px;
+  margin-top: 90px;
+  border: solid 5px transparent; }
 
-/*hebben we zelf ingevoerd*/
+.naarboven {
+  border: solid 2px blue;
+  float: right; }
+
 /*die zullen altijd ge├»mplementeerd worden en kan niets dat overschrijven*/
 /*lettertypen, kleuren, breekpunten,... zie dus naar die file*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
