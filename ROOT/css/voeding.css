@@ -1,31 +1,22 @@
-@charset "utf-8";
 /* CSS Document */
-
-.animatie{width:10%;
-height:10%;
-background-image:url(../Images/Marijke/eatme.png);
-background-repeat:no-repeat;
-background-size:cover;
-padding:100px;}
-
+.animatie {
+  width: 10%;
+  height: 10%;
+  background-image: url(../Images/Marijke/eatme.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px; }
 
 /*animatie pagina voeding*/
-@keyframes veranderen { 
-	from{
-		background-image:url(../Images/Marijke/eatme.png);
-		}
-	to{
-    	background-image:url(../Images/Marijke/carrot.png);
-	}
-} 
-
+@keyframes veranderen {
+  from {
+    background-image: url(../Images/Marijke/eatme.png); }
+  to {
+    background-image: url(../Images/Marijke/carrot.png); } }
 .animatie:hover {
-	animation-name:veranderen;
-	animation-duration:2s;
-	animation-iteration-count:1;
-	animation-fill-mode: forwards;
- 
-}
+  animation-name: veranderen;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
 
-
-
+/*# sourceMappingURL=voeding.css.map */
