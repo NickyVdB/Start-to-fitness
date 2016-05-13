@@ -1,4 +1,4 @@
-﻿/* Scss Document */
+/* Scss Document */
 
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Lobster);
@@ -11,9 +11,9 @@ body {
 
 /*opmaak navigatiebar*/
 #logo {
-    max-width: 40%;
+    max-width: 100%;
 }
-/*.navbar ul {
+.navbar ul {
     text-decoration: none;
     float: left;
 }
@@ -31,11 +31,26 @@ body {
     line-height: 100px;
 }
 
-*/
+
 //menu logo verdwijnt bij hamburger
 @media (max-width: 765px) {
     
-    #logo{display:none;}
+    #logo{display:none;
+    }
+
+.navbar ul {
+    text-decoration: none;
+    clear:both;
+}
+.navbar li {
+   clear:both;
+}
+.navbar-brand {
+   clear:both;
+}
+.nav-link {
+   clear:both;
+    }
 }
 article {
     margin-left: 15px;
