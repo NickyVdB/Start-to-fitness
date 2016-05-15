@@ -103,7 +103,7 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
-    padding: 20px 40px
+    padding: 20px 40px;
 }
 .btn-xl:hover,
 .btn-xl:focus,
@@ -730,3 +730,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #1ad3f1
 }
+.button {
+  outline: 90px solid transparent!important;
+  -webkit-filter: url("#filter");
+  filter: url("/#filter");
+
+}
+

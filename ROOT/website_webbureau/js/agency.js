@@ -24,3 +24,18 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+//disturbed button
+var bt = document.querySelectorAll('.button')[0];
+var turbVal = { val: 10 };
+var turb = document.querySelectorAll('#filter feTurbulence')[0];
+var btTl = new TimelineLite({ paused: true, onUpdate: function() {
+  turb.setAttribute('baseFrequency', '0 ' + turbVal.val);
+} });
+
+btTl.to(turbVal, 0.2, { val: 10 });
+btTl.to(turbVal, 0.2, { val: 0.001 });
+
+bt.addEventListener('click', function() {
+  btTl.restart();
+  });
