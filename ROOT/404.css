@@ -1,6 +1,6 @@
 html,
 body {
-    background-image: url(../Images/errorpaginas/fatman.jpg);
+    background-image: url(/fatman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
