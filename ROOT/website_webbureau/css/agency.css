@@ -730,10 +730,11 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #1ad3f1
 }
-.button {
-  outline: 90px solid transparent!important;
-  -webkit-filter: url("#filter");
-  filter: url("/#filter");
 
-}
+.distortedbutton{ 
+  letter-spacing: 2px;
+  transform: translateZ(0);/*nodig om ervoor te zorgen dat na animatie, de knop er terug hetzelfde uitziet*/
+  outline: 90px solid transparent;/*nodig om ervoor te zorgen dat er geen dubbele rand tevoorschijn komt*/
+  -webkit-filter: url("#filter");
+  filter: url("#filter");}
 

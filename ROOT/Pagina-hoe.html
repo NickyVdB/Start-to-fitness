@@ -75,7 +75,22 @@
 				</section>
 				<section>
 					<h3>Laten we beginnen!</h3>
-					<p>In het volgende filmpje zal getoond worden hoe je op een optimale manier een sit-up kan doen. Deze oefening lijkt simpel, maar als je je rug wilt sparen en blessures wilt voorkomen, zijn deze tips cruciaal. Als je de tips nog eens wilt teruglezen kan dat in dit <a href="Video/script-sit-up.pdf">script.</a> </p>
+					<p>In het volgende filmpje zal getoond worden hoe je op een optimale manier een sit-up kan doen. Deze oefening lijkt simpel, maar als je je rug wilt sparen en blessures wilt voorkomen, zijn deze tips cruciaal. Als je de tips nog eens wilt teruglezen kan dat in dit <button>script</button>. </p><p id="script">Hallo allemaal ik ga vandaag laten zien hoe je optimaal een sit-up kan
+doen zonder je rug te forceren. Eerst en vooral moet je zorgen dat je
+hielen op de grond staan met je tenen in de lucht. Dit zorgt ervoor dat je
+rug beter gaat doorzakken op lange termijn. Je zal dat in het begin
+misschien niet hard voelen maar op lange termijn is dat de beste manier.
+Je benen zet je iets meer dan heupbreedte uit elkaar. Dan als je gaat
+liggen, moet je zien dat je rug plat op de grond ligt, je rug mag niet
+hollen, je mag er geen hand kunnen onder steken. Als je toch zou merken
+dat je rug nog holt, kan je onder je voeten nog boeken steken zodat je
+voeten hoger staan, dan gaat je rug meer doorzakken. Als je een sit-up
+doet, moet je niet helemaal rechtop komen en dan terug helemaal naar
+beneden, dat is ook slechter voor je rug. Je kan beter een beetje omhoog
+komen, je kijkt door je benen heen, het liefst meer naar je navel, niet
+naar boven, dat is slechter voor je nek. Je houdt je hoofd vanonder vast,
+en dan kan je zo rustig sit-ups doen. En dit is de ideale manier om sit-ups
+te doen.</p>
 					<video width="640" height="340" controls>
 						<source src="Video/sit-up-kleiner.mp4" type="video/mp4"/>
 						<source src="Video/sit-up-kleiner.webm" type="video/webm"/>
@@ -94,7 +109,27 @@
 				</p>
 			</footer>
 		</div>
+        <!--Java script-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+		<!--script tonen en verbergen-->
+    	<script>
+        	$(document).ready(function() {
+                $('#script').hide('fast');
+				$('button').on("click",tonenVerbergen);
+            });
+			
+			var script = '1';
+			function tonenVerbergen(){
+				if(script=='1'){
+					$('#script').show('slow');
+					script = '0';	
+				}
+			else {
+					$('#script').hide('slow');
+					script = '1';
+					}	
+			};
+        </script>
 	</body>
 </html>

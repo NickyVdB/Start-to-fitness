@@ -219,7 +219,7 @@
                 
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/Marijke.jpg" class="img-responsive img-circle" alt="Afbeelding Marijke" title="Marijke">
+                        <img src="img/Marijke.jpg" class="img-responsive img-circle" id="marijke" alt="Afbeelding Marijke" title="Marijke">
                         <h4>Marijke Meersman</h4>
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.facebook.com/marijke.meersman.5"><i class="fa fa-facebook"></i></a></li>
@@ -291,7 +291,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
   <defs>
     <filter id="filter">
-      <feTurbulence type="fractalNoise" baseFrequency="0 0" numOctaves="1" result="warp" />
+      <feTurbulence type="fractalNoise" baseFrequency="0 0" numOctaves="1" result="warp"></feTurbulence>
       <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="50" in="SourceGraphic" in2="warp" />
 	  <!--Uitleg code voor mezelf:
 	  baseFrequency: dit is wat je ziet als de pagina wordt geladen
@@ -302,7 +302,7 @@
     </filter>
   </defs>
 </svg>
-                                <button type="submit" class="btn btn-xl button">Verzenden</button>
+                                <button type="submit" class="btn btn-xl button distortedbutton">Verzenden</button>
                             </div>
                         </div>
                     </form>
@@ -323,8 +323,8 @@
     </footer>
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -344,7 +344,17 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
-	
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<!--JQuery code-->
+    <!--<script>
+    $(document).ready(
+			function(){
+				$(".distortedbutton").on("click",bevestigingVragen);
+			}
+		);
+		
+	</script>-->
 </body>
 
 </html>
