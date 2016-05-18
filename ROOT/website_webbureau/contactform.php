@@ -90,7 +90,7 @@
 	<!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
     
-    <!--script -->
+    <!--berichtvenster om te laten weten dat het bericht succesvol verzonden is-->
     <script>
 	$(document).ready(function(){
 	alert("U bericht is succesvol verzonden")
