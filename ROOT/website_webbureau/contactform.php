@@ -87,8 +87,17 @@
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
     
-<!-- Custom Theme JavaScript -->
+	<!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+    
+    <!--script -->
+    <script>
+	$(document).ready(function(){
+	alert("U bericht is succesvol verzonden")
+    });
+    </script>
+    
+    
 </body>
 
 </html>
