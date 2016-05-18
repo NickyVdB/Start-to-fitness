@@ -3,9 +3,14 @@
 	<head>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="./css/compilatie-bootstrap.css">
 		<link rel="stylesheet" href="./css/gezondheid.css">
+	
+      
+      
+        
 		<title>Start to fitness</title>
 	</head>
 	<body>
@@ -73,6 +78,9 @@
 						<source src="movie.ogg" type="video/ogg"/>
 						Your browser does not support the video tag.
 					</video>
+					<p>De textuele versie van dit filmpje vind je terug in dit <button id="bericht">Script</button></p>
+			
+		
 					<h3>Voeding en hydratatie </h3>
 					<p>
 						Een juiste voeding is een goede basis bij sporten. Koolhydraten en eiwitten zijn de belangrijkste elementen van een goede fitnessvoeding. 
@@ -113,11 +121,36 @@
 				<p>
 					&copy; Vincent Oliviers | Gemaakt door studenten van <a href="http://www.thomasmore.be/">Thomas More</a> | Bezoek ook onze site: <a href="http://r0374251.sinners.be/website_webbureau/index.html">Vimani</a>
 					<!--afbeelding om op te klikken om terug naar boven aan de pagina te gaan-->
-					<a href="#"> <img class="naarboven" src="Images/Marijke/naar-boven.jpg" alt="klik hier om naar boven in de pagina te gaan" title="klik hier om terug naar boven in deze pagina te gaan"/> </a>
+					 <img class="naarboven" id="up"src="Images/Marijke/naar-boven.jpg" alt="klik hier om naar boven in de pagina te gaan" title="klik hier om terug naar boven in deze pagina te gaan"/> 
 				</p>
 			</footer>
 		</div>
+		  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(
+        function(){
+            $("#bericht").on("click", toon);
+              $("#up").on("click",scroll);
+                   }
+              
+  );
+    
+   function toon(){
+       alert("hallazjefoazhjeopfhauozjfhazpiuyvpuytfpzifyp!zo");
+   };
+   function scroll(){
+ /* $("html, body").animate({ scrollTop: 0 }, "slow");*/
+       
+   
+     $('html').animate({scrollTop:0}, 'slow');//IE, FF
+    $('body').animate({scrollTop:0}, 'slow');//chrome, don't know if Safari works
+   
+    
+   };
+
+      </script>
 	</body>
 </html>
