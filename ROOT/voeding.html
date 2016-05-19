@@ -19,7 +19,7 @@
             <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
                <a class="navbar-brand" href="http://r0374251.sinners.be/ROOT/"><img id="logo" src="Images/logo.png" alt="logo start to run"/></a>
                <ul class="nav navbar-nav">
-                  <li class="nav-item ">
+                  <li class="nav-item active">
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/">Inleiding <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
@@ -28,7 +28,7 @@
                   <li class="nav-item">
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/Materiaal.html">Materiaal</a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/voeding.html">Voeding</a>
                   </li>
                   <li class="nav-item">
@@ -37,9 +37,6 @@
                   <li class="nav-item">
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/pagina-waarom.htm">Waarom starten</a>
                   </li>
-                  <li class="nav-item">
-        <a class="nav-link" href="http://r0374251.sinners.be/ROOT/waar.htm">Waar fitnessen</a>
-      </li>
                </ul>
             </div>
          </nav>
@@ -100,8 +97,7 @@
                   </div>
                </div>
               
-              	<canvas height="400" width="400" id="fruit"></canvas>
-                <div><button>Start</button></div>
+              
                 
             </article>
             <article>
@@ -185,73 +181,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
       
-      <script
-			  src="https://code.jquery.com/jquery-2.2.3.min.js"
-			  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-			  crossorigin="anonymous"></script>
-	<script
-			  src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
-			  integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
-			  crossorigin="anonymous"></script>
-	<script>
-			// ------------------------
-            // events bepalen
-            // ------------------------
-			$(document).ready(
-				function() {
-					
-					$("button").button();
-					$("button").on("click",start);
-				}
-			);
-			
-			// -------------------------------
-            // uitwerking functies
-            // -------------------------------
-			function slide() {
-				//haal het gewenste canvas element op uit het html doc
-                //initialisatie van de 2d-tekenomgeving
-                var element = $("#fruit")[0];
-                var context = element.getContext('2d');
-								
-				//kenmerken animatie
-				var fps = 1; //aantal frames per seconde
-				var frameDuration = 1000/fps;
-				var col=0;
-				
-				//afbeelding voorbereiden
-				var image = document.createElement("img");
-				image.src = "Images/Nicky/spriteFruit";
-				
-				$(image).on('load', deeltjeTekenen);
-				
-				//kenmerken deeltje van een sprite
-				var breedte = 400;
-				var hoogte = 400;
-				var uitsnede = new Path2D();
-				
-				uitsnede.rect(25,25,breedte,hoogte);
-				context.clip(uitsnede);	
 
-				function deeltjeTekenen()
-                {
- 					if (col>3) 
-					{
-						col=0;
-					}
-					context.drawImage(image, 25-breedte*col, 25);
-					//elke keer opnieuw volgend deeltje tekenen, met 15 frames per seconde
-					setTimeout(deeltjeTekenen,frameDuration);
-					col = col+1;
-                }
-			}
-			
-			function start() {
-				function() {
-					slide();
-				}
-			}
-		
-	</script>
    </body>
 </html>

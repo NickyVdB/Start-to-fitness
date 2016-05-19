@@ -83,6 +83,9 @@ h1 {
 header h1 {
   font-family: 'Lobster' , serif; }
 
+.row {
+  margin-top: 2%; }
+
 /*die zullen altijd ge├»mplementeerd worden en kan niets dat overschrijven*/
 /*lettertypen, kleuren, breekpunten,... zie dus naar die file*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
