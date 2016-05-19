@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;EACP,KAAK,EAAE,GAAG",
+"sources": ["../scss/Materiaal.scss"],
+"names": [],
+"file": "Materiaal.css"
+}
