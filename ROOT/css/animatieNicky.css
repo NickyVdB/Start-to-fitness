@@ -37,7 +37,7 @@ section.world div {
 .back {
   bottom: 0;
   right: -40%;
-  background: grey !important;
+  background: rgba(0,0,0,0.50) !important;
 }
 
 .back.one {
