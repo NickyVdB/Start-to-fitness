@@ -22,14 +22,14 @@ body {
 
 .navbar li {
   float: left;
-  margin-right: 20px;
+  margin-right: 25px;
   list-style-type: none; }
 
 .navbar-brand {
-  width: 15%; }
+  width: 13%; }
 
 .nav-link {
-  font-size: 1.3em;
+  font-size: 1em;
   height: 100px;
   line-height: 100px; }
 
@@ -62,13 +62,9 @@ aside {
   width: 40%;
   float: left;
   margin-top: 150px;
-  margin-left: 30px;
-  margin-right: 0; }
-
-aside::before {
-  content: "\ÔÇ£";
-  font-size: 200%;
-  margin-left: -30px; }
+  margin-left: 0px;
+  margin-right: 0;
+  margin-bottom: 50px; }
 
 h1 {
   float: none; }

@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="./css/compilatie-bootstrap.css">
 		<link rel="stylesheet" href="./css/gezondheid.css">
-	
+	    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       
       
         
@@ -26,10 +26,10 @@
   <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
     <a class="navbar-brand" href="http://r0374251.sinners.be/ROOT/"><img id="logo" src="Images/logo.png" alt="logo start to run"/></a>
     <ul class="nav navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="http://r0374251.sinners.be/ROOT/">Inleiding <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="http://r0374251.sinners.be/ROOT/Gezondheid.html">Gezondheid</a>
       </li>
       <li class="nav-item">
@@ -43,6 +43,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="http://r0374251.sinners.be/ROOT/pagina-waarom.htm">Waarom starten</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="http://r0374251.sinners.be/ROOT/waar.htm">Waar fitnessen</a>
       </li>
     </ul>
   </div>
@@ -70,35 +73,47 @@
 						Zo worden de vezels weer uit elkaar getrokken en is de kans op een blessure veel kleiner. Enkel stretchen of opwarmen is niet genoeg. 
 						Stretchen is een onderdeel van de opwarming. 
 					</p>
-					<aside id="quote">Enkel stretchen of opwarmen is niet genoeg. 
+					<div class="row">
+					<aside class="hidden-sm-down col-md-10 col-lg-5" id="quote">Enkel stretchen of opwarmen is niet genoeg. 
 						Stretchen is een onderdeel van de opwarming.  
 					</aside>
-					<video id="opwarmen" width="600" height="440" controls>
+					<div class="col-sm-8 col-md-10 col-lg-6">
+					<video  id="opwarmen" width="600" height="440" controls>
 						<source src="Video/opwarmen.mp4" type="video/mp4"/>
 						<source src="movie.ogg" type="video/ogg"/>
 						Your browser does not support the video tag.
 					</video>
 					<p>De textuele versie van dit filmpje vind je terug in dit <button id="bericht">Script</button></p>
-			
-		
+                </div>
+			        </div>
+		              <div class="row" id="voeding">
 					<h3>Voeding en hydratatie </h3>
-					<p>
+					
+					<p class="col-sm-12 col-md-5 col-lg-4">
 						Een juiste voeding is een goede basis bij sporten. Koolhydraten en eiwitten zijn de belangrijkste elementen van een goede fitnessvoeding. 
 						Koolhydraten zijn van groot belang bij het functioneren van het menselijk lichaam. Ze leveren veel energie en dit heeft men nodig bij het sporten.
 						Als je dus voldoende voedsel eet dat koolhydraten bevat, dan zul je meer energie hebben om te trainen. Een voorbeeld van een vrucht die veel koolhydraten bevat is een banaan. 
 						Eiwitten zijn minstens even belangerijk als koolhydraten. Ze maken deel uit van elke cel in ons lichaam. Eiwitten zorgen ook voor het herstel van onze spieren en dit is dus noodzakelijk. 
 						Eiwitten zitten in bijna elke vorm van vlees en vis. Voor meer informatie over voeding, zie voeding.
 					</p>
-					<figure>
-						<img src="Images/Vincent/apple.jpg" alt="Rode appel"> 
+				    
+				    <div class="col-sm-12 col-md-5 col-lg-4 hidden-sm-down">
+						<figure>
+						<img src="Images/Vincent/apple.jpg" class="img-circle" id="appel" alt="Rode appel"> 
 						<figcaption>Een mooie rode apple </figcaption>
 					</figure>
-					<p>
+					
+					</div>
+					<p class="col-sm-12 col-md-5 col-lg-4">
 						Een goede hydratatie is ook essentieel bij het sporten. Je moet een goede vochtbalans behouden. 
 						Tijdens het sporten zweet je en verlies je dus vocht. Dit verloren vocht moet vervangen worden. 
 						Dit kan je het best door water of sportdrank te drinken. Wanneer je te weinig drinkt tijdens het sporten, ga je dit direct merken aan prestatie verlies. 
 						Je kan ook draaierig worden of hoofdpijn krijgen. Hydrateren is dus zeer belangrijk.  
 					</p>
+					
+					</div>
+					<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-4">
 					<h3>Sporten en roken </h3>
 					<p>
 						Roken is niet gezond, dat weten we allemaal, maar wordt het sporten ook beïnvloed door roken? Tijdens het roken wordt er teer afgezet in de luchtwegen. 
@@ -107,12 +122,17 @@
 						Nicotine zorgt ervoor dat het hartritme wordt verhoogd. Dit zorgt ervoor dat het hart sneller overbelast wordt tijdens het sporten. 
 						Een roker moet dus beter op zijn hartslag letten want roken verhoogt de kans op een hartstilstand. 
 					</p>
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-4">
 					<h3>Sport en zwangerschap </h3>
 					<p> 
 						Zwangerschap en sport gaan goed samen. Dankzij het sporten krijg je een betere bloedcirculatie en zuurstofopname.
 						Ook versterkt sporten je spieren en je skelet. Je moet echter wel zien dat je sport met mate, overvloedig sporten is zeker niet de bedoeling.
 						Als je pijn krijgt moet je zeker stoppen. Je moet ook zeker voldoende hydrateren, anders kunnen vroegtijdige weeën optreden.
 					</p>
+					</div>
+					<aside id="zwangerschap-quote" class="col-sm-12 col-md-4 col-lg-4">Zwangerschap en sport gaan goed samen.</aside>
+					</div>
 				</section>
 			</article>
             
@@ -142,11 +162,11 @@
        alert("hallazjefoazhjeopfhauozjfhazpiuyvpuytfpzifyp!zo");
    };
    function scroll(){
- /* $("html, body").animate({ scrollTop: 0 }, "slow");*/
+
        
    
      $('html').animate({scrollTop:0}, 'slow');//IE, FF
-    $('body').animate({scrollTop:0}, 'slow');//chrome, don't know if Safari works
+    $('body').animate({scrollTop:0}, 'slow');//chrome
    
     
    };
