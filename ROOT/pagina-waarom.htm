@@ -59,10 +59,14 @@
                      </div>
                      <div class="col-sm-12 col-md-4 col-lg-3">
                      <p>Het doel moet ook <em>specifiek</em> zijn, hoe ga je dat gewicht verliezen? Ben je van plan enkel te fitnessen? Ga je ook iets veranderen aan je eetgewoonten? Hoe vaak per week en hoelang ga je fitnessen? Dit zijn allemaal vragen die je jezelf kan stellen om het zo specifiek mogelijk te maken. Maak deze vragen dan ook <em>actiegericht</em>. Dit houdt in dat je in je agenda alvast een paar momenten vrij houdt om te gaan fitnessen. </p></div>
+                     <div class="hidden-md-down col-lg-3"><canvas height="350" width="250" id="weegschaal"></canvas>
+                  <button id="tonen" class="alert-success">Tonen</button>
+                  <button id="verbergen" class="alert-warning">Verbergen</button>
+                  </div>
                      
                      <div class="col-sm-12 col-md-4 col-lg-3"><p> Zo maak je er echt tijd voor en heb je niet meer het excuus dat je het vergeten bent of geen tijd meer over had. Ten slotte moet dit ook <em>tijdsgebonden</em> zijn. Je kan bijvoorbeeld met jezelf afspreken dat je op het einde van de maand 2 kilo afgevallen moet zijn. Hier is het weer belangrijk om je doel realistisch te houden. Niets is zo leuk als je doel te bereiken. Als je doel niet realistisch was, zal je er een slecht gevoel aan over houden en ligt je doel al snel in de vuilbak.</p>
                   </div>
-                  <div class="hidden-md-down col-lg-3"><canvas height="350" width="250" id="weegschaal"></canvas></div>
+                  
                   </section>
                
                
@@ -120,7 +124,10 @@
     <!--events bepalen-->
 	$(document).ready(function() {
 		tekenen();
+		$('#tonen').on('click',tekenen);
+		$('#verbergen').on('click',verbergen);
         
+		
     });
 	
 	<!--Functie tekenen uitwerken-->
@@ -129,19 +136,57 @@
 		var weegschaal = $("#weegschaal")[0];
 		<!--2d omgeving instellen-->
 		var context = weegschaal.getContext('2d');
-				
+		<!--Variable voor het midden van het scherm in breedte aanmaken-->
+		var middenBreedte = weegschaal.width-(weegschaal.width/2);	
+		<!--Variable voor het midden van het scherm in hoogte aanmaken-->
+		var middenHoogte = weegschaal.height-(weegschaal.height/2);
+		<!-- variabele voor breedte en hoogte aanmaken-->
+		var breedte = weegschaal.width;
+		var hoogte = weegschaal.height;
+			
 		<!--pad maken om weegschaal te vullen-->
 		context.beginPath();
 		context.fillStyle="rgb(5,5,25)";
-		context.fillRect(0,0,weegschaal.width, weegschaal.height); 
+		context.fillRect(0,0,breedte, hoogte); <!--x, y, breedte, hoogte-->
 		
-		<!--cirkel in weegschaal-->
+		<!--halve cirkel in weegschaal-->
 		context.beginPath();
-		context.arc(100,75,50,0,2*Math.PI);
+        context.arc(middenBreedte, 75, 50, 1*Math.PI, 0); <!--x, y, radius, startAngle, endAngle, (antiClockwise)-->
+		context.closePath();
 		context.fillStyle="white";
+		context.fill();
+
+		<!-- rode aanwijzer-->
+		context.beginPath();
+		context.moveTo(120,50);
+		context.lineTo(middenBreedte,75);
+		<!--opmaak lijn-->
+		context.strokeStyle = "red";
+		context.lineWidth=3;
+		context.lineCap="round";
+		<!--lijn effectief tekenen-->
 		context.stroke();
 		
+		<!--linker voetvlak-->
+		context.beginPath();
+		context.fillStyle="grey";
+		context.fillRect(10,110,middenBreedte-20, middenHoogte+30);
+		
+		<!--rechter voetvlak-->
+		context.beginPath();
+		context.fillStyle="grey";
+		context.fillRect(middenBreedte+10,110,middenBreedte-20, middenHoogte+30);
 		}
+		
+		<!--scherm wissen-->
+		function verbergen(){
+			<!--canvas element ophalen-->
+			var weegschaal = $("#weegschaal")[0];
+			<!--2d omgeving instellen-->
+			var context = weegschaal.getContext('2d');
+			
+			context.clearRect(0,0,weegschaal.width,weegschaal.height);
+			};
 	
     </script>
    </body>
