@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;EACP,UAAU,EAAE,EAAE;;AAElB,OAAO;EAAC,UAAU,EAAE,MAAM",
+"sources": ["Materiaal.scss"],
+"names": [],
+"file": "Materiaal.css"
+}
