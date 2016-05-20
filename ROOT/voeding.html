@@ -48,7 +48,7 @@
          <section>
             <p>Natuurlijk zijn een goed trainingsschema en het juiste materiaal heel belangrijk. Maar al dit harde werk zal niet beloond worden als u niet oplet met wat u eet. Er zijn heel veel verleidingen als u thuis komt van het trainen. Welke dingen kan u best eten? En welke zeker niet? Hieronder leest u het antwoord op deze vragen.</p>
             <aside>It's not a short term diet. It's a long term lifestyle change</aside>
-            <canvas height="400px" width="400px" id="canvas"></canvas>
+          
             <nav class="navbar">
                <ul>
                   <li><a href="#gezondeVoeding">Gezonde voeding</a></li>
@@ -169,7 +169,11 @@
                <h5>1. Mars, Snickers en andere</h5>
                <p>Een snel tussendoortje in een pauze is een snoepreep of een koekje. Maar op 1 reep Mars of Snickers krijgen we toch 200 calorieën, 8 gram vet, 35 gram koolhydraten en 7 gram proteïnes binnen.</p>
                <p>TIP: tijdens de pauze kan u beter een stuk fruit, slaatje of volkoren-broodje eten.</p>
+               <canvas height="200px" width="200px" id="trofee"></canvas>
+               <button id="tekenen">Tekenen</button>
+               <button id="wissen">Wissen</button>
             </article>
+            
          </section>
          <footer class="footer">
             <p>
@@ -182,45 +186,21 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
       
-      	<script
-			  src="https://code.jquery.com/jquery-2.2.3.min.js"
-			  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-			  crossorigin="anonymous"></script>
-	<script
-			  src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
-			  integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
-			  crossorigin="anonymous"></script>
 	<script>
-			// ------------------------
-            // event bepalen
-            // ------------------------
-			$(document).ready(
-				function() {
-					tekenen();
-				}
-			);
-			
-			// -------------------------------
-            // uitwerking functie
-            // -------------------------------
-			function tekenen() {
-
-                //initialisatie van de 2d-tekenomgeving
-                var element = document.getElementById("canvas");
-                var context = element.getContext('2d');
-				
-				context.font = "30px Arial";
-											
-				var gradient=ctx.createLinearGradient(0,0, element.width, 0);
-				gradient.addColorStop("0","red");
-				gradient.addColorStop("0.5","orange");
-				gradient.addColorStop("1","yellow");
-				
-				context.fillStyle=gradient;
-				context.fillText("Healty food ... healty mind!",10,50);			
-										
-				}		
-	</script>
+    	$(document).ready(
+			//events bepalen
+			function() {
+				$("button #tekenen").on("click",tekenen);
+				$("button #wissen").on("click",wissen);
+			)			
+        );
+		
+		//uitwerking van tekenen
+		function tekenen() {
+			alert("tekenen");
+		}
+            
+    </script>
       
 
    </body>
