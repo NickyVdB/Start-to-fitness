@@ -200,25 +200,35 @@
 			//pad maken
 			//beker tekenen
 			context.beginPath();
-			context.rect(20,20,100,100);
+			context.fillStyle="#DAA520";
+			context.fillRect(20,20,100,100);
 			context.stroke();
 			
 			//tussenstuk van beker
 			context.beginPath();
-			context.rect(60,120,20,50);
+			context.fillStyle="DAA520";
+			context.fillRect(60,120,20,50);
 			context.stroke();
 			
 			//voet van de beker
 			context.beginPath();
-			context.rect(30,170,80,50);
+			context.fillStyle="black";
+			context.fillRect(30,170,80,50);
 			context.stroke();
 			
-			//halve cirkel voor oren van beker
+			//oren van beker
 			context.beginPath();
-			context.arc(20,75,70,0, math.PI, false);
-			context.closePath();
-			context.stroke();
-		}
+			context.strokeStyle="#DAA520";
+			context.lineWidth=5;
+			context.rect(5,40,15,60);
+			context.stroke();	
+			
+			context.beginPath();
+			context.strokeStyle="#DAA520";
+			context.lineWidth=5;
+			context.rect(120,40,15,60);
+			context.stroke();	
+			}
             
     </script>
       
