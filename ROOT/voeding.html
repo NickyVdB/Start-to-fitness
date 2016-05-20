@@ -169,9 +169,13 @@
                <h5>1. Mars, Snickers en andere</h5>
                <p>Een snel tussendoortje in een pauze is een snoepreep of een koekje. Maar op 1 reep Mars of Snickers krijgen we toch 200 calorieën, 8 gram vet, 35 gram koolhydraten en 7 gram proteïnes binnen.</p>
                <p>TIP: tijdens de pauze kan u beter een stuk fruit, slaatje of volkoren-broodje eten.</p>
-               <canvas height="200px" width="200px" id="trofee"></canvas>
+               <div>
+               <canvas height="300px" width="400px" id="trofee"></canvas>
+               </div>
+               <div>
                <button id="tekenen">Tekenen</button>
                <button id="wissen">Wissen</button>
+               </div>
             </article>
             
          </section>
@@ -190,14 +194,38 @@
     	$(document).ready(
 			//events bepalen
 			function() {
-				$("button #tekenen").on("click",tekenen);
-				$("button #wissen").on("click",wissen);
-			)			
+				$("#tekenen").on("click",tekenen);
+				$("#wissen").on("click",wissen);
+			}
         );
 		
 		//uitwerking van tekenen
 		function tekenen() {
-			alert("tekenen");
+			//canvas element ophalen en 2d-tekenomgeving initialiseren
+			var element = $("#trofee")[0];
+			var context = element.getContext('2d');
+			
+			//pad maken
+			//beker tekenen
+			context.beginPath();
+			context.rect(20,20,100,100);
+			context.stroke();
+			
+			//tussenstuk van beker
+			context.beginPath();
+			context.rect(60,120,20,50);
+			context.stroke();
+			
+			//voet van de beker
+			context.beginPath();
+			context.rect(30,170,80,50);
+			context.stroke();
+			
+			//halve cirkel voor oren van beker
+			context.beginPath();
+			context.arc(20,75,70,0, math.PI, false);
+			context.closePath();
+			context.stroke();
 		}
             
     </script>
