@@ -31,7 +31,7 @@
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/voeding.html">Voeding</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="http://r0374251.sinners.be/ROOT/Pagina-hoe.html">Starten met fitnessen</a>
+                     <a class="nav-link" href="http://r0374251.sinners.be/ROOT/Pagina-hoe.html">Hoe starten</a>
                   </li>
                   <li class="nav-item active">
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/pagina-waarom.htm">Waarom starten</a>
@@ -130,11 +130,16 @@
 		<!--2d omgeving instellen-->
 		var context = weegschaal.getContext('2d');
 				
-		<!--pad maken-->
+		<!--pad maken om weegschaal te vullen-->
 		context.beginPath();
 		context.fillStyle="rgb(5,5,25)";
 		context.fillRect(0,0,weegschaal.width, weegschaal.height); 
-
+		
+		<!--cirkel in weegschaal-->
+		context.beginPath();
+		context.arc(100,75,50,0,2*Math.PI);
+		context.fillStyle="white";
+		context.stroke();
 		
 		}
 	
