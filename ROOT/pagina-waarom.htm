@@ -126,8 +126,7 @@
 		tekenen();
 		$('#tonen').on('click',tekenen);
 		$('#verbergen').on('click',verbergen);
-        
-		
+	
     });
 	
 	<!--Functie tekenen uitwerken-->
@@ -159,7 +158,7 @@
 		<!-- rode aanwijzer-->
 		context.beginPath();
 		context.moveTo(120,50);
-		context.lineTo(middenBreedte,75);
+		context.lineTo(middenBreedte,73);
 		<!--opmaak lijn-->
 		context.strokeStyle = "red";
 		context.lineWidth=3;
@@ -176,6 +175,14 @@
 		context.beginPath();
 		context.fillStyle="grey";
 		context.fillRect(middenBreedte+10,110,middenBreedte-20, middenHoogte+30);
+		
+		<!--bolletje onder aanwijzer-->
+		context.beginPath();
+        context.arc(middenBreedte, 75, 5, 0, 2 * Math.PI); <!--x, y, radius, startAngle, endAngle, (antiClockwise)-->
+		context.closePath();
+		context.fillStyle="black";
+		context.fill();
+		
 		}
 		
 		<!--scherm wissen-->
