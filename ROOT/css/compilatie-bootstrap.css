@@ -56,16 +56,6 @@ article {
 section {
   display: block; }
 
-aside {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 200%;
-  width: 40%;
-  float: left;
-  margin-top: 150px;
-  margin-left: 0px;
-  margin-right: 0;
-  margin-bottom: 50px; }
-
 h1 {
   float: none; }
 
