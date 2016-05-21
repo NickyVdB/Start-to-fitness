@@ -731,10 +731,22 @@ body {
     webkit-tap-highlight-color: #1ad3f1
 }
 
-.distortedbutton{ 
-  letter-spacing: 2px;
-  transform: translateZ(0);/*nodig om ervoor te zorgen dat na animatie, de knop er terug hetzelfde uitziet*/
-  outline: 90px solid transparent;/*nodig om ervoor te zorgen dat er geen dubbele rand tevoorschijn komt*/
-  -webkit-filter: url("#filter");
-  filter: url("#filter");}
+/*Transform en transitie toepassen op knop meer*/
+.transformMeer{
+	transition:transform 1s, font-size 3s, border-radius 3s, background-color 3s, color 3s, border 3s; 
+	}
+
+.transformMeer:hover{
+	transform:rotate(360deg);
+	height:150px;
+	width:250px;
+	font-size:57px;
+	border-radius:700px;
+	background-color: #1ad3f1;
+	text-align:center;
+	color:black;
+	border:solid 5px black;
+
+	}
+
 
