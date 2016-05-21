@@ -737,7 +737,7 @@ body {
 	}
 
 .transformMeer:hover{
-	transform:rotate(360deg);
+	transform:rotate(720deg);
 	height:150px;
 	width:250px;
 	font-size:57px;
