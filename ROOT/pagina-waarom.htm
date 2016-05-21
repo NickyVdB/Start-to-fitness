@@ -183,6 +183,16 @@
 		context.fillStyle="black";
 		context.fill();
 		
+		<!--streepjes-->
+		for (var i=0;i<12;i++){
+					context.beginPath();
+					context.rotate(170*Math.PI/180);
+					context.fillStyle="orange";
+					context.moveTo(200,0);
+					context.lineTo(200,0);
+					context.stroke();
+				 }
+		
 		}
 		
 		<!--scherm wissen-->
