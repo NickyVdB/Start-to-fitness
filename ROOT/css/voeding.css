@@ -13,6 +13,8 @@
     background-image: url(../Images/Marijke/eatme.png); }
   to {
     background-image: url(../Images/Marijke/carrot.png); } }
+
+<!--omschrijving wat er gebeurt met de animatie-->
 .animatie:hover {
   animation-name: veranderen;
   animation-duration: 2s;

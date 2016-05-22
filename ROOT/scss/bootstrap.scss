@@ -5,8 +5,7 @@
  */
 
 // Core variables and mixins
-/*zelf ingevoerde css*/
-@import "custom";
+
 
 @import "variables";/*lettertypen, kleuren, breekpunten,... zie dus naar die file*/
 @import "mixins";
@@ -58,7 +57,7 @@
 @import "utilities-spacing";
 @import "utilities-responsive";
 
-//mijn eigen aanvullingen
-@import "eigenaanvullingen";
+/*zelf ingevoerde css*/
+@import "custom";
 //wat kunnen eigen aanvullingen zijn?:
 //img-circle, ook een rand hieraanin functie van de breedte van het scherm
