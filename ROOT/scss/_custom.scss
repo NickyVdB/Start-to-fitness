@@ -5,7 +5,6 @@
 /* CSS Document */
 
 body {
-    background-color: rgba(0, 149, 133, 0.5);
     margin: 10px;
 }
 
@@ -21,7 +20,6 @@ body {
     float: left;
     margin-right: 25px;
     list-style-type: none;
- 
 }
 
 .navbar-brand {
@@ -32,12 +30,30 @@ body {
     height: 100px;
     line-height: 100px;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: red; }
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: red;
+	font-weight:bold; }
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .open > .nav-link:focus, .navbar-light .navbar-nav .open > .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link:focus,
+.navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .nav-link.open:focus,
+.navbar-light .navbar-nav .nav-link.open:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active:focus,
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: black;
+  font-weight:bold; }
 
 
-//menu logo verdwijnt bij hamburger
+
+/*menu logo verdwijnt bij hamburger*/
 @media (max-width: 765px) {
     
-    #logo{display:none;
+#logo{display:none;
     }
 
 .navbar ul {
@@ -67,20 +83,21 @@ h1 {
     float: none;
 }
 
+header h1 {
+	font-family: 'Lobster' , serif;
+}
+
 /*opmaak footer*/
 .footer {
-    background-color: lightgrey;
+    background-color: rgba(75,120,255,0.3);
     line-height: 60px;
     margin-top: 90px;
     border: solid 5px transparent;
+	text-decoration:none;
 }
 .naarboven {
     border: solid 2px blue;
     float: right;
-}
-
-header h1 {
-	font-family: 'Lobster' , serif;
 }
 
 .row{margin-top:2%;}
