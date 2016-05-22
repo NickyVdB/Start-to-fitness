@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,WAAW;EACP,UAAU,EAAE,EAAE;;AAElB,OAAO;EAAC,UAAU,EAAE,MAAM",
+"mappings": "AAAA,WAAW;EACP,UAAU,EAAE,EAAE;;AAElB,OAAO;EAAC,UAAU,EAAE,MAAM;;AAC1B,OAAO;EACH,KAAK,EAAE,IAAI;EACX,YAAY,EAAE,KAAK;EACnB,MAAM,EAAG,KAAK",
 "sources": ["../scss/Materiaal.scss"],
 "names": [],
 "file": "Materiaal.css"

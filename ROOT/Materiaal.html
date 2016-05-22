@@ -83,8 +83,17 @@
                      </p>
                      <img src="Images/Vincent/matje.jpg" class="img-fluid"  alt="Fitness matje">
                   </div>
+                  
+               
                 
                </div>
+                  <div class="row">
+                      <div class= "col-sm-12 col-md-12 col-lg-12">
+                          <canvas id ="canvas">
+                          </canvas>
+                      </div>
+                      
+                  </div>
                <div class="row">
                <div class="col-sm-12 col-md-5 col-lg-6">
                <h3> In een fitnesscentrum </h3>
@@ -112,7 +121,39 @@
             </p>
          </footer>
       </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script>
+          $(document).ready(function(){
+                                        tekenen();   
+                                       }
+                           );
+        
+          function tekenen(){
+              
+              
+              var element = $("#canvas")[0];
+              var context = element.getContext('2d');
+              context.lineWidth= 4;
+              context.strokeStyle="black";
+              
+              for(var teller=10;teller<(element.width); teller+=element.width/5)
+              {
+                  
+                    
+                    context.rect(teller,element.height/3,element.width/1000,element.height-100);
+                    context.rect(teller + element.width/50,element.height/4,element.width/1000,element.height-70);
+                    context.rect(teller + element.width/25,(element.height/2)-(element.height/20),element.width/15,element.height/10);
+                    context.rect(teller + element.width/8,element.height/4,element.width/1000,element.height-70);
+                    context.rect(teller + element.width/6.9 ,element.height/3,element.width/1000,element.height-100);
+              }
+                  
+              context.stroke();
+              
+          
+              
+          }
+
+       </script>
    </body>
 </html>
