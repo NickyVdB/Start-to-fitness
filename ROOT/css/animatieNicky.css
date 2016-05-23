@@ -123,21 +123,7 @@ section.wereld div {
   right: -160px;
   background: #91D9EB !important;
 }
-.wolk::before, .wolk::after {
-  background: #91D9EB !important;
-}
-.wolk::before {
-  width: 80%;
-  height: 50%;
-  bottom: -25%;
-  left: -20%;
-}
-.wolk::after {
-  width: 60%;
-  height: 30%;
-  top: -15%;
-  right: -10%;
-}
+
 
 .wolk.een {
   width: 100px;
