@@ -22,3 +22,12 @@
   animation-fill-mode: forwards; }
 
 /*# sourceMappingURL=voeding.css.map */
+
+/*transition toevoegen op nummer 1 van de top 10*/
+#winnaar {
+	transition: font-size 1s linear 1s;	
+}
+
+#winnaar:hover {
+	font-size: 50px;
+}
