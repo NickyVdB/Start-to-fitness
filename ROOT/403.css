@@ -1,6 +1,6 @@
 html,
 body {
-    background-image: url(/koekjes.jpg);
+    background-image: url(./img/koekjes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -110,4 +110,113 @@ p {
     p {
         font-size: 1.5em;
     }
+}
+
+
+
+
+
+#container {
+  height: 120px;
+  margin: 0px 34%;
+  overflow: hidden;
+  position: relative;
+  width: 110px;
+  background-color:rgba(255, 255, 255, 0);
+}
+
+#container div {
+  position: absolute;
+margin-left: 0px;  
+     background-color:rgba(255, 255, 255, 0);
+}
+
+
+
+
+ .donut {
+  animation-name: donut;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: rgba(255, 255, 255, 0.2);
+ background-image:url("Images/vincent/donut.png");
+    background-size: cover;
+  bottom: 0;
+  border-radius: 10px;
+  height: 30px;
+  width: 14px;
+}
+
+@-webkit-keyframes donut {
+  0% {
+    top: 0;
+       background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0);
+    top: 80px;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    top: 160px;
+  }
+}
+.donut:nth-child(1) {
+  left: 20px;
+  -webkit-animation-delay: 11.19632ms;
+  -webkit-animation-duration: 1300ms;
+  -webkit-transform: scale(0.3);
+}
+
+.donut:nth-child(2) {
+  left: 25px;
+  animation-delay: 0.32955ms;
+  animation-duration: 700ms;
+  transform: scale(0.4);
+}
+
+.donut:nth-child(3) {
+  left: 75px;
+  animation-delay: 5.69047ms;
+  animation-duration: 600ms;
+  transform: scale(0.5);
+}
+
+.donut:nth-child(4) {
+  left: 7px;
+  animation-delay: 11.11925ms;
+  animation-duration: 900ms;
+  transform: scale(0.4);
+}
+
+.donut:nth-child(5) {
+  left: 0px;
+  animation-delay: 16.72459ms;
+  animation-duration: 780ms;
+  transform: scale(0.4);
+}
+
+.donut:nth-child(6) {
+  left: 18px;
+  animation-delay: 22.25157ms;
+  animation-duration: 700ms;
+  transform: scale(0.3);
+}
+
+.donut:nth-child(7) {
+  left: 55px;
+  animation-delay: 27.13771ms;
+  animation-duration: 1200ms;
+  transform: scale(0.6);
+}
+
+
+
+#home{
+    color:white;
+    font-size: 240%;
+    margin-left: 0;
+     text-align: center;
+    line-height : 80px;
+    
 }
