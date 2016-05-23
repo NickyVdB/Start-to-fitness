@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/compilatie-bootstrap.css">
       <link rel="stylesheet" href="css/Materiaal.css">
+      <link rel="stylesheet" href="css/magic.css">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       
       <title>Start to fitness | Materiaal</title>
@@ -81,7 +82,7 @@
                         Een fitnesseleastiek is een band of koord dat meestal is gemaakt uit rubber. Deze worden gebruikt om weerstand te bieden tijdens een oefening. 
                         Zo kan je de elastiek aan een voet en aan een hand bevestigen. Dan kan je een oefening doen waarbij de elastiek dan de oefening verzwaart. Een voordeel van de fitnesselastiek is, dat het een goed attribuut is om uw rug- en nekspieren mee te trainen. 
                      </p>
-                     <img src="Images/Vincent/matje.jpg" class="img-fluid"  alt="Fitness matje">
+                     <img src="Images/Vincent/matje.jpg" class="img-fluid" id="matje" alt="Fitness matje">
                   </div>
                   
                
@@ -91,6 +92,7 @@
                       <div class= "col-sm-12 col-md-12 col-lg-12">
                           <canvas id ="canvas">
                           </canvas>
+                          <button id="wissen">leegmaken</button>
                       </div>
                       
                   </div>
@@ -126,6 +128,11 @@
     <script>
           $(document).ready(function(){
                                         tekenen();   
+                                        $("#wissen").on("click",wissen);
+              
+                                        setTimeout(function(){
+                                        $('#matje').addClass('magictime boingInUp');
+                                        }, 3000);
                                        }
                            );
         
@@ -153,6 +160,12 @@
           
               
           }
+        function wissen()
+        {
+                var element = $("#canvas")[0];
+                var context = element.getContext('2d');
+                context.clearRect(0,0,element.width,element.height);
+        }
 
        </script>
    </body>
