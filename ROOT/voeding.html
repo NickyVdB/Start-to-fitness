@@ -12,7 +12,6 @@
    <body>
       <div class="container">
          <!--Navigatiebalk-->
-
          <nav class="navbar navbar-light bg-faded">
             <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
             &#9776;
@@ -38,13 +37,12 @@
                   <li class="nav-item">
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/pagina-waarom.htm">Waarom starten</a>
                   </li>
-                   <li class="nav-item">
+                  <li class="nav-item">
                      <a class="nav-link" href="http://r0374251.sinners.be/ROOT/waar.html">Waar fitnessen</a>
                   </li>
                </ul>
             </div>
          </nav>
-
          <header>
             <h1>
                <h1 id="voeding">Voeding</h1>
@@ -52,10 +50,10 @@
          </header>
          <section>
             <p>Natuurlijk zijn een goed trainingsschema en het juiste materiaal heel belangrijk. Maar al dit harde werk zal niet beloond worden als u niet oplet met wat u eet. Er zijn heel veel verleidingen als u thuis komt van het trainen. Welke dingen kan u best eten? En welke zeker niet? Hieronder leest u het antwoord op deze vragen.</p>
-            <aside class="blockquote-reverse"><h3>It's not a short term diet. It's a long term lifestyle change</h3></aside>
-
+            <aside class="blockquote-reverse">
+               <h3>It's not a short term diet. It's a long term lifestyle change</h3>
+            </aside>
             <h2 id="gezondeVoeding">Gezonde voeding</h2>
-            
             <article>
                <h3 id="eiwitshakes">Eiwitshakes</h3>
                <div class="row">
@@ -90,9 +88,6 @@
                      <p>Blauwe bessen zijn echte vitaminebommetjes, ze bevatten antioxidanten die ervoor zorgen dan het verouderingsproces van uw brein vertraagt wordt. Deze antioxidanten zorgen voor een betere wondgenezing, ze gaan ontstekingen tegen en beschermen tegen verschillende ziektes waaronder kanker.</p>
                   </div>
                </div>
-              
-              
-                
             </article>
             <article>
                <h3 id="groenten">Supergroenten</h3>
@@ -163,99 +158,95 @@
                <p>Een snel tussendoortje in een pauze is een snoepreep of een koekje. Maar op 1 reep Mars of Snickers krijgen we toch 200 calorieën, 8 gram vet, 35 gram koolhydraten en 7 gram proteïnes binnen.</p>
                <p>TIP: tijdens de pauze kan u beter een stuk fruit, slaatje of volkoren-broodje eten.</p>
                <div>
-               <canvas height="300px" width="400px" id="trofee"></canvas>
+                  <canvas height="300px" width="400px" id="trofee"></canvas>
                </div>
                <div>
-               <button id="tekenen">Tekenen</button>
-               <button id="wissen">Wissen</button>
+                  <button id="tekenen">Tekenen</button>
+                  <button id="wissen">Wissen</button>
                </div>
             </article>
-            
          </section>
          <footer class="footer">
-            	<div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-8">
-				<p>
-					&copy; Nicky Van den Brande | Gemaakt door studenten van <a href="http://www.thomasmore.be/">Thomas More</a> | Bezoek ook onze site: <a href="http://r0374251.sinners.be/website_webbureau/index.html">Vimani</a>
-					<!--afbeelding om op te klikken om terug naar boven aan de pagina te gaan-->
-					<img class="naarboven" id="up"src="Images/Marijke/naar-boven.jpg" alt="klik hier om naar boven in de pagina te gaan" title="klik hier om terug naar boven in deze pagina te gaan"/>
-				</p>
-                </div>
-                </div>
-			</footer>
+            <div class="row">
+               <div class="col-sm-12 col-md-12 col-lg-8">
+                  <p>
+                     &copy; Nicky Van den Brande | Gemaakt door studenten van <a href="http://www.thomasmore.be/">Thomas More</a> | Bezoek ook onze site: <a href="http://r0374251.sinners.be/website_webbureau/index.html">Vimani</a>
+                     <!--afbeelding om op te klikken om terug naar boven aan de pagina te gaan-->
+                     <img class="naarboven" id="up"src="Images/Marijke/naar-boven.jpg" alt="klik hier om naar boven in de pagina te gaan" title="klik hier om terug naar boven in deze pagina te gaan"/>
+                  </p>
+               </div>
+            </div>
+         </footer>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-      
-	<script>
-    	$(document).ready(
-			//events bepalen
-			function() {
-				tekenen()
-				$("#tekenen").on("click",tekenen);
-				$("#wissen").on("click",wissen);
-                 $("#up").on("click",scroll);
-			}
-        );
-		
-		//uitwerking van tekenen
-		function tekenen() {
-			//canvas element ophalen en 2d-tekenomgeving initialiseren
-			var element = $("#trofee")[0];
-			var context = element.getContext('2d');
-			
-			//pad maken
-			//beker tekenen
-			context.beginPath();
-			context.fillStyle="#DAA520";
-			context.fillRect(20,20,100,100);
-			context.stroke();
-			
-			//tussenstuk van beker
-			context.beginPath();
-			context.fillStyle="DAA520";
-			context.fillRect(60,120,20,50);
-			context.stroke();
-			
-			//voet van de beker
-			context.beginPath();
-			context.fillStyle="black";
-			context.fillRect(30,170,80,50);
-			context.stroke();
-			
-			//oren van beker
-			context.beginPath();
-			context.strokeStyle="#DAA520";
-			context.lineWidth=5;
-			context.rect(5,40,15,60);
-			context.stroke();	
-			
-			context.beginPath();
-			context.strokeStyle="#DAA520";
-			context.lineWidth=5;
-			context.rect(120,40,15,60);
-			context.stroke();	
-			}
-			
-			function wissen() {
-				var element = $('#trofee')[0];
-				var context = element.getContext("2d");
-
-				context.clearRect(0, 0, element.width, element.height);
-			}
-                  
-           function scroll(){
-
-       
-   
-     $('html').animate({scrollTop:0}, 'slow');//IE, FF
-    $('body').animate({scrollTop:0}, 'slow');//chrome
-   
-    
-   };
-            
-    </script>
-      
-
+      <script>
+         $(document).ready(
+         //events bepalen
+         function() {
+         tekenen()
+         $("#tekenen").on("click",tekenen);
+         $("#wissen").on("click",wissen);
+                     $("#up").on("click",scroll);
+         }
+            );
+         
+         //uitwerking van tekenen
+         function tekenen() {
+         //canvas element ophalen en 2d-tekenomgeving initialiseren
+         var element = $("#trofee")[0];
+         var context = element.getContext('2d');
+         
+         //pad maken
+         //beker tekenen
+         context.beginPath();
+         context.fillStyle="#DAA520";
+         context.fillRect(20,20,100,100);
+         context.stroke();
+         
+         //tussenstuk van beker
+         context.beginPath();
+         context.fillStyle="DAA520";
+         context.fillRect(60,120,20,50);
+         context.stroke();
+         
+         //voet van de beker
+         context.beginPath();
+         context.fillStyle="black";
+         context.fillRect(30,170,80,50);
+         context.stroke();
+         
+         //oren van beker
+         context.beginPath();
+         context.strokeStyle="#DAA520";
+         context.lineWidth=5;
+         context.rect(5,40,15,60);
+         context.stroke();	
+         
+         context.beginPath();
+         context.strokeStyle="#DAA520";
+         context.lineWidth=5;
+         context.rect(120,40,15,60);
+         context.stroke();	
+         }
+         
+         function wissen() {
+         var element = $('#trofee')[0];
+         var context = element.getContext("2d");
+         
+         context.clearRect(0, 0, element.width, element.height);
+         }
+                      
+               function scroll(){
+         
+           
+         
+         $('html').animate({scrollTop:0}, 'slow');//IE, FF
+         $('body').animate({scrollTop:0}, 'slow');//chrome
+         
+         
+         };
+                
+      </script>
    </body>
 </html>
