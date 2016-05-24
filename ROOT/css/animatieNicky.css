@@ -29,7 +29,6 @@ section.wereld {
 }
 section.wereld div {
   position: absolute;
-  box-sizing: border-box;
   background: transparent;
   border-radius: 2px;
 }
@@ -126,20 +125,23 @@ section.wereld div {
 
 
 .wolk.een {
-  width: 100px;
-  top: 60px;
+  width: 90px;
+  top: 50px;
+  border-radius:20%;
   animation: wolk 3s linear infinite;
 }
 
 .wolk.twee {
-  width: 80px;
+  width: 60px;
   top: 20px;
+  border-radius:20%;
   animation: wolk 2.6s linear infinite 0.5s;
 }
 
 .wolk.drie {
-  width: 130px;
+  width: 110px;
   top: 110px;
+  border-radius:20%;
   animation: wolk 3.2s linear infinite 1s;
 }
 
