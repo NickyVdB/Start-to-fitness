@@ -1,6 +1,6 @@
 html,
 body {
-    background-image: url(./img/koekjes.jpg);
+    background-image: url(./koekjes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -132,15 +132,13 @@ margin-left: 0px;
 }
 
 
-
-
  .donut {
   animation-name: donut;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-color: rgba(255, 255, 255, 0.2);
- background-image:url("Images/vincent/donut.png");
-    background-size: cover;
+  background-image:url("./donut.png");
+  background-size: cover;
   bottom: 0;
   border-radius: 10px;
   height: 30px;
@@ -163,9 +161,9 @@ margin-left: 0px;
 }
 .donut:nth-child(1) {
   left: 20px;
-  -webkit-animation-delay: 11.19632ms;
-  -webkit-animation-duration: 1300ms;
-  -webkit-transform: scale(0.3);
+  animation-delay: 11.19632ms;
+  animation-duration: 1300ms;
+  transform: scale(0.3);
 }
 
 .donut:nth-child(2) {
