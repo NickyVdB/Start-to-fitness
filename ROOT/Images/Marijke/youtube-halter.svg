@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000" viewBox="0 0 2000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc0606;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fdfcfc;
+      }
+
+      .cls-3 {
+        fill: #040404;
+      }
+    </style>
+  </defs>
+  <path id="Rode_vierkant" data-name="Rode vierkant" class="cls-1" d="M709,422.366C709,450.215,677.973,473,640.049,473h-453.1C149.027,473,118,450.215,118,422.366V89.634C118,61.785,149.027,39,186.951,39h453.1C677.973,39,709,61.785,709,89.634V422.366Z"/>
+  <path id="Driehoek_in_vierkant" data-name="Driehoek in vierkant" class="cls-2" d="M520.977,235.51L305.31,128.958,306.737,344.9,520.977,235.51"/>
+  <rect id="horizontale_zwarte_rechthoek" data-name="horizontale zwarte rechthoek" class="cls-3" x="1124" y="455" width="648" height="215"/>
+  <rect id="linker_korte_verticale_rechthoek" data-name="linker korte verticale rechthoek" class="cls-3" x="1023" y="393" width="119" height="355"/>
+  <rect id="rechter_korte_verticale_rechthoek" data-name="rechter korte verticale rechthoek" class="cls-3" x="1732" y="393" width="119" height="355"/>
+  <rect id="linker_lange_verticale_rechthoek" data-name="linker lange verticale rechthoek" class="cls-3" x="889" y="314" width="122" height="513"/>
+  <rect id="rechter_lange_verticale_rechthoek" data-name="rechter lange verticale rechthoek" class="cls-3" x="1863" y="314" width="122" height="513"/>
+</svg>
