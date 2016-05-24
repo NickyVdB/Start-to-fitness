@@ -96,7 +96,7 @@
 				<section class="row">
                 <div class="col-sm-12 col-md-12 col-lg-5">
 					<h3>Laten we beginnen!</h3>
-					<p>In het volgende filmpje zal getoond worden hoe je op een optimale manier een sit-up kan doen. Deze oefening lijkt simpel, maar als je je rug wilt sparen en blessures wilt voorkomen, zijn deze tips cruciaal. Als je de tips nog eens wilt teruglezen kan dat in dit <button type="button" class="btn btn-sm btn-info">script</button>.</p> <p id="script">Ik ga vandaag laten zien hoe je optimaal een sit-up kan
+					<p>In het volgende filmpje zal getoond worden hoe je op een optimale manier een sit-up kan doen. Deze oefening lijkt simpel, maar als je je rug wilt sparen en blessures wilt voorkomen, zijn deze tips cruciaal. Als je de tips nog eens wilt teruglezen kan dat in dit <a id="linkScript">script</a>.</p> <p id="script">Ik ga vandaag laten zien hoe je optimaal een sit-up kan
 doen zonder je rug te forceren. (1) Eerst en vooral moet je zorgen dat je
 hielen op de grond staan met je tenen in de lucht. Dit zorgt ervoor dat je
 rug beter gaat doorzakken op lange termijn. Je zal dat in het begin
@@ -140,7 +140,7 @@ en dan kan je zo rustig sit-ups doen. Dat is de ideale manier op sit-ups te doen
 			<!-- als document gedaan is met laden, meteen het script verbergen-->
         	$(document).ready(function() {
                 $('#script').hide('fast');
-				$('button').on("click",tonenVerbergen);
+				$('#linkScript').on("click",tonenVerbergen);
             });
 			<!--variabele aanmaken om te beslissen of show of hide moet worden gedaan-->
 			var script = '1';

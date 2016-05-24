@@ -4750,4 +4750,11 @@ header h1 {
 .row {
   margin-top: 2%; }
 
+/*ervoor zorgen dat alle linken onderlijnd worden behalve in de navbar*/
+a {
+  text-decoration: underline; }
+
+nav a {
+  text-decoration: none; }
+
 /*# sourceMappingURL=compilatie-bootstrap.css.map */
