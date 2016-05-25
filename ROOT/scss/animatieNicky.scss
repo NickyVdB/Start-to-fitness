@@ -17,7 +17,7 @@ body {
 	align-content: center;
 }
 
-section.world {
+section.wereld {
   position: relative;
   width: 500px;
   height: 240px;
@@ -27,174 +27,144 @@ section.world {
   box-shadow: 0 16px 10px -10px green;
   transform: translate(-50%, 0%);
 }
-section.world div {
+section.wereld div {
   position: absolute;
-  box-sizing: border-box;
   background: transparent;
   border-radius: 2px;
 }
 
-.back {
+.gebouw {
   bottom: 0;
   right: -40%;
-  background: grey !important;
+  background: rgba(0,0,0,0.50) !important;
 }
 
-.back.one {
+.gebouw.een {
   width: 30%;
   height: 8%;
   animation: elem 2.6s linear infinite;
 }
 
-.back.two {
+.gebouw.twee {
   width: 40%;
   height: 16%;
   animation: elem 3.3s linear infinite 1.6s;
 }
 
-.back.three {
+.gebouw.drie {
   width: 7%;
   height: 24%;
   animation: elem 2.2s linear infinite 1s;
 }
 
-.back.four {
+.gebouw.vier {
   width: 18%;
   height: 13%;
   animation: elem 2.8s linear infinite 0.2s;
 }
 
-.floor {
+.grond {
 	background:green;
 	width: 100%;
 	height: 4px;
   	bottom: 0;
 }
-.floor .rock {
-  bottom: 0;
-  right: -20px;
-}
-.floor .rock.one {
-  width: 16px;
-  height: 26px;
-  animation: elem 3s linear infinite;
-}
-.floor .rock.two {
-  width: 20px;
-  height: 18px;
-  animation: elem 3s linear infinite 0.4s;
-}
-.floor .rock.three {
-  width: 13px;
-  height: 26px;
-  animation: elem 3s linear infinite 1.3s;
-}
-.floor .grass {
+
+.grond .gras {
 	background:green;
   	width: 2px;
   	bottom: 0;
   	right: -2px;
 }
-.floor .grass.one {
+.grond .gras.een {
   height: 15px;
   animation: elem 3s linear infinite;
 }
-.floor .grass.two {
+.grond .gras.twee {
   height: 10px;
   animation: elem 3.3s linear infinite 0.2s;
 }
-.floor .grass.three {
+.grond .gras.drie {
   height: 18px;
   animation: elem 2.5s linear infinite 0.4s;
 }
-.floor .grass.four {
+.grond .gras.vier {
   height: 5px;
   animation: elem 2.9s linear infinite 0.6s;
 }
-.floor .grass.five {
+.grond .gras.vijf {
   height: 7px;
   animation: elem 3s linear infinite 0.8s;
 }
-.floor .grass.six {
+.grond .gras.zes {
   height: 10px;
   animation: elem 3.1s linear infinite 1s;
 }
-.floor .grass.seven {
+.grond .gras.zeven {
   height: 4px;
   animation: elem 3s linear infinite 1.2s;
 }
-.floor .grass.height {
+.grond .gras.acht {
   height: 7px;
   animation: elem 3s linear infinite 1.4s;
 }
-.floor .grass.nine {
+.grond .gras.negen {
   height: 10px;
   animation: elem 3.1s linear infinite 1.6s;
 }
-.floor .grass.ten {
+.grond .gras.tien {
   height: 6px;
   animation: elem 3s linear infinite 1.8s;
 }
 
-.cloud {
+.wolk {
   height: 20px;
   right: -160px;
   background: #91D9EB !important;
 }
-.cloud::before, .cloud::after {
-  background: #91D9EB !important;
-}
-.cloud::before {
-  width: 80%;
-  height: 50%;
-  bottom: -25%;
-  left: -20%;
-}
-.cloud::after {
-  width: 60%;
-  height: 30%;
-  top: -15%;
-  right: -10%;
+
+
+.wolk.een {
+  width: 90px;
+  top: 50px;
+  border-radius:20%;
+  animation: wolk 3s linear infinite;
 }
 
-.cloud.one {
-  width: 100px;
-  top: 60px;
-  animation: cloud 3s linear infinite;
-}
-
-.cloud.two {
-  width: 80px;
+.wolk.twee {
+  width: 60px;
   top: 20px;
-  animation: cloud 2.6s linear infinite 0.5s;
+  border-radius:20%;
+  animation: wolk 2.6s linear infinite 0.5s;
 }
 
-.cloud.three {
-  width: 130px;
+.wolk.drie {
+  width: 110px;
   top: 110px;
-  animation: cloud 3.2s linear infinite 1s;
+  border-radius:20%;
+  animation: wolk 3.2s linear infinite 1s;
 }
 
-.stick {
+.stokman {
   width: 6px;
   height: 30px;
   bottom: 30px;
   left: 50%;
   background: #333333;
   border-radius: 3px;
-  animation: stick 3s ease-in-out infinite;
+  animation: stokman 3s ease-in-out infinite;
 }
-.stick div {
+.stokman div {
   transform-origin: 50% 0%;
 
 }
-.stick .left {
+.stokman .links {
   z-index: -1;
 }
-.stick .right {
+.stokman .rechts {
   z-index: 1;
 }
-.stick .head {
+.stokman .hoofd {
   width: 12px;
   height: 12px;
   background: #333333;
@@ -202,75 +172,75 @@ section.world div {
   transform: translate(-3px, -14px);
 }
 
-.stick .body {
+.stokman .lichaam {
 	width:4px;
 	height:30px;
 	background: #333333;
 }
 
-.stick .arm {
+.stokman .arm {
   width: 4px;
   height: 14px;
   background: #333333;
   top: 1px;
   left: 1px;
 }
-.stick .arm .bottom {
+.stokman .arm .beneden {
   width: 4px;
   height: 12px;
   background: #333333;
   bottom: -10px;
 }
-.stick .leg {
+.stokman .been {
   width: 4px;
   height: 20px;
   background: #333333;
   bottom: -19px;
   left: 1px;
 }
-.stick .leg .bottom {
+.stokman .been .beneden {
   width: 4px;
   height: 15px;
   background: #333333;
   bottom: -13px;
 }
 
-.arm.left {
-  animation: run 1s linear infinite;
+.arm.links {
+  animation: loop 1s linear infinite;
 }
-.arm.left .bottom {
-  animation: arm-bottom 0.5s linear infinite;
-}
-
-.arm.right {
-  animation: run 1s linear infinite 0.5s;
-}
-.arm.right .bottom {
-  animation: arm-bottom 0.5s linear infinite 0.5s;
+.arm.links .beneden {
+  animation: arm-beneden 0.5s linear infinite;
 }
 
-.leg.left {
-  animation: run 1s linear infinite;
+.arm.rechts {
+  animation: loop 1s linear infinite 0.5s;
 }
-.leg.left .bottom {
-  animation: leg-bottom 1s linear infinite;
-}
-
-.leg.right {
-  animation: run 1s linear infinite 0.5s;
-}
-.leg.right .bottom {
-  animation: leg-bottom 1s linear infinite 0.5s;
+.arm.rechts .beneden {
+  animation: arm-beneden 0.5s linear infinite 0.5s;
 }
 
-.sandwich {
+.been.links {
+  animation: loop 1s linear infinite;
+}
+.been.links .beneden {
+  animation: been-beneden 1s linear infinite;
+}
+
+.been.rechts {
+  animation: loop 1s linear infinite 0.5s;
+}
+.been.rechts .beneden {
+  animation: been-beneden 1s linear infinite 0.5s;
+}
+
+.hamburger {
 	background-color:white;
 	margin: 0 auto;
 	padding-top: 27%;
-	animation: jump 3s linear infinite 1.8s;
+	animation: spring 3s linear infinite 1.8s;
 
 }
-.sandwich .bun {
+.hamburger .broodje {
   background-image: linear-gradient(orange, darkorange);
   width: 120px;
   height: 25px;
@@ -279,12 +249,12 @@ section.world div {
   display: block;
   border-bottom: 4px solid orange;
 }
-.sandwich .bottom {
+.hamburger .onder {
   border-radius: 0 0 90px 90px !important;
   border-top: 4px solid darkorange;
-  border-bottom: none;
+  border-bottom: neen;
 }
-.sandwich .lettuce, .sandwich .tomato, .sandwich .cheese, .sandwich .meat {
+.hamburger .sla, .hamburger .tomaat, .hamburger .kaas, .hamburger .vlees {
   background: YellowGreen;
   width: 140px;
   height: 5px;
@@ -292,22 +262,22 @@ section.world div {
   margin: 0 auto;
   display: block;
 }
-.sandwich .tomato {
+.hamburger .tomaat {
   background: OrangeRed;
   width: 120px;
   height: 10px;
 }
-.sandwich .cheese {
+.hamburger .kaas {
   background: Gold;
   height: 8px;
 }
-.sandwich .meat {
+.hamburger .vlees {
   background: FireBrick;
   height: 20px;
 }
 
 
-@keyframes jump {
+@keyframes spring {
 	0% {
 		transform: translateY(-40px);
 	}
@@ -319,7 +289,7 @@ section.world div {
 	}
 }
 
-@keyframes cloud {
+@keyframes wolk {
   0% {
     transform: translateX(0);
   }
@@ -335,7 +305,7 @@ section.world div {
     transform: translateX(-640px);
   }
 }
-@keyframes stick {
+@keyframes stokman {
   0%, 100% {
     transform: translateX(0px);
   }
@@ -346,7 +316,7 @@ section.world div {
     transform: translateX(20px);
   }
 }
-@keyframes run {
+@keyframes loop {
   0%, 50%, 100% {
     transform: rotate(0deg);
   }
@@ -357,7 +327,7 @@ section.world div {
     transform: rotate(-60deg);
   }
 }
-@keyframes arm-bottom {
+@keyframes arm-beneden {
   0%, 100% {
     transform: rotate(0deg);
   }
@@ -365,7 +335,7 @@ section.world div {
     transform: rotate(-90deg);
   }
 }
-@keyframes leg-bottom {
+@keyframes been-beneden {
   0%, 100% {
     transform: rotate(0deg);
   }
