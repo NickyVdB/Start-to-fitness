@@ -9,7 +9,7 @@ background-size:cover;
 padding:100px;}
 
 
-/*animatie pagina voeding*/
+/*animatie cupcake naar wortel*/
 @keyframes veranderen { 
 	from{
 		background-image:url(../Images/Marijke/eatme.png);
@@ -19,6 +19,7 @@ padding:100px;}
 	}
 } 
 
+/*wat er gebeurt met de animatie*/
 .animatie:hover {
 	animation-name:veranderen;
 	animation-duration:2s;
@@ -27,5 +28,12 @@ padding:100px;}
 }
 
 
+/*transition toevoegen op nummer 1 van de top 10*/
+#winnaar {
+	transition: font-size 1s linear 1s;	
+}
 
+#winnaar:hover {
+	font-size: 50px;
+}
 
