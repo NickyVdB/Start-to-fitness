@@ -158,6 +158,7 @@
                   </div>
                </div>
                <h5 id="winnaar">1. Mars, Snickers en andere</h5>
+               <p id="uitroep"></p>
                <p>Een snel tussendoortje in een pauze is een snoepreep of een koekje. Maar op 1 reep Mars of Snickers krijgen we toch 200 calorieën, 8 gram vet, 35 gram koolhydraten en 7 gram proteïnes binnen.</p>
                <p>TIP: tijdens de pauze kan u beter een stuk fruit, slaatje of volkoren-broodje eten.</p>
                <div>
@@ -187,6 +188,7 @@
          $(document).ready(
          //events bepalen
          function() {
+		 $("#winnaar").hover(schrijf);
          tekenen()
          $("#tekenen").on("click",tekenen);
          $("#wissen").on("click",wissen);
@@ -239,6 +241,20 @@
          
          context.clearRect(0, 0, element.width, element.height);
          }
+		 
+		 function schrijf() {
+			 if	($("#winnaar").text().indexOf("!") == -1) {
+			 var tekst = "";
+			 var i;
+			 
+			 for (i = 0; i < 10; i++) {
+				 tekst += "!";
+			 }
+			 $("#winnaar").text($("#winnaar").text() + " " + tekst);
+			 }
+			
+		 }
+		 
                       
                function scroll(){
          
