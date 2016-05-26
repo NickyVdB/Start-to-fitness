@@ -8,6 +8,56 @@ body {
 .text-primary {
     color: #1ad3f1
 }
+label {
+  position: relative;
+  max-width:auto;
+  display: inline-block;
+}
+label span {
+  position: absolute;
+  left: 20px;
+  top: -2em;
+  font-size: 20px;
+  cursor: text;
+  color: white;
+  transition: all 150ms ease;
+}
+
+label.empty input {
+  border-color: #d9d9d9;
+}
+label.empty span {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  background: none;
+  color: #cccccc;
+}
+
+input {
+  border: 2px solid #f2f2f2;
+  max-width:auto;
+  outline: none;
+}
+input:focus {
+  border-color: #d9d9d9;
+}
+input:valid {
+  border-color: #42d142;
+}
+input:invalid {
+  border-color: #ff8e7a;
+}
+form {
+  margin: auto;
+}
+
+input, button {
+  padding: 15px 20px;
+  border-radius: 1px;
+  border: 2px solid #bdbdbd;
+}
+
 p {
     font-size: 18px;
     line-height: 1.75;
@@ -749,4 +799,21 @@ body {
 
 	}
 
+.spaceInUp:hover {
+  animation: spaceInUp;
+}
+
+@keyframes spaceInUp {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 0%;
+    transform: scale(.2) translate(0%, -200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 0%;
+    transform: scale(1) translate(0%, 0%);
+  }
+}
 
