@@ -6,8 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="author" content="Marijke Meersman">
       <meta name="description" content="Tips over hoe je best kan beginnen met fitnessen en met welke risico's je rekening moet houden. Er is ook meer uitleg voor het doen van en sit-up voorzien.">
-      
-      
+       
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/compilatie-bootstrap.css">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -58,10 +57,12 @@
                </ul>
             </div>
          </nav>
+         <!--Titel-->
          <header>
             <h1 class="col-sm-12 col-md-12 col-lg-12">Hoe beginnen met fitnessen?
             </h1>
          </header>
+         <!--Inleidende tekst-->
          <article>
             <div class="row">
                <div class="col-sm-12 col-md-6 col-lg-5">
@@ -70,7 +71,7 @@
                </div>
             </div>
             <section class="row">
-            
+            	<!--tekst bereid je voor met foto en svg-->
                <h3 class="col-sm-12 col-md-12 col-lg-12">Bereid je voor
                </h3>
                <div class="col-sm-12 col-md-4 col-lg-3">
@@ -98,6 +99,7 @@
                   <img src="Images/Marijke/sneakers.jpg" alt="Sportschoenen" title="sportschoenen" class="img-fluid img-rounded">
                </div>
             </section>
+            <!-- Tekst wees je bewust van de risico's-->
             <section class="row">
                <h3 class="col-sm-12 col-md-12 col-lg-12">Wees je bewust van de risico’s
                </h3>
@@ -111,6 +113,7 @@
                   </p>
                </div>
             </section>
+            <!--tekst trainingsmaatje met foto-->
             <section class="row">
                <h3 class="col-sm-12 col-md-12 col-lg-12">Trainingsmaatje
                </h3>
@@ -118,6 +121,7 @@
                   <p>Met twee is natuurlijk veel leuker dan alleen. Zo kan je nog eens bijpraten met je beste vriend(in), maar ben je toch actief bezig. Het kan ook zeker een motivatie zijn als je zelf een keer niet veel zin hebt om te gaan fitnessen. Je 'moet' dan wel gaan, want je vriend(in) verwacht dat jij er ook zal zijn. Deze sociale druk helpt bij veel mensen, maar helpt natuurlijk veel minder bij twee personen die niet gemotiveerd zijn. Zoek dus liefst een persoon die gemotiveerd is. Je kan zelfs samen een SMART-schema opstellen om de kans op slagen te verhogen. 
                   </p>
                </div>
+               <!--foto met kikkertjes-->
                <div class="col-sm-12 col-lg-4 col-md-4">
                   <figure>
                      <img src="Images/Marijke/kikkers-pixabay.jpg" alt="kikkers die stretchen" title="Stretchen is goed voor je!" class="img-fluid img-rounded"/>
@@ -131,6 +135,7 @@
                   </p>
                </div>
             </section>
+            <!--Tekst basisschema-->
             <section class="row">
                <h3 class="col-sm-12 col-md-12 col-lg-12">Basisschema
                </h3>
@@ -143,6 +148,7 @@
                   </p>
                </div>
             </section>
+            <!--tekst laten we beginnen met video en transcript-->
             <section class="row">
                <div class="col-sm-12 col-md-12 col-lg-5">
                   <h3>Laten we beginnen!
@@ -150,6 +156,7 @@
                   <p>In het volgende filmpje zal getoond worden hoe je op een optimale manier een sit-up kan doen. Deze oefening lijkt simpel, maar als je je rug wilt sparen en blessures wilt voorkomen, zijn deze tips cruciaal. Als je de tips nog eens wilt teruglezen kan dat in dit 
                      <a id="linkScript">transcript
                      </a>.
+                     <!--tekst die meteen verdwijnt bij openen van het scherm en opent bij klikken op de link-->
                   </p>
                   <p id="script">Ik ga vandaag laten zien hoe je optimaal een sit-up kan
                      doen zonder je rug te forceren. (1) Eerst en vooral moet je zorgen dat je
@@ -172,6 +179,7 @@
                      </em>
                   </p>
                </div>
+               <!--Instructievideo sit-ups-->
                <div class="col-sm-12 col-md-12 col-lg-7">
                   <video width="640" height="340" class="table-responsive" id="video" controls>
                      <source src="Video/sit-up-kleiner.mp4" type="video/mp4"/>
@@ -183,6 +191,7 @@
                </div>
             </section>
          </article>
+         <!--Footer-->
          <footer class="footer">
             <div class="row">
                <div class="col-sm-12 col-md-12 col-lg-12">
@@ -200,10 +209,13 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
       <!--script voor tonen en verbergen van script bij video-->
       <script>
-         <!-- als document gedaan is met laden, meteen het script verbergen-->
+         	<!--events bepalen als html is geladen-->
            $(document).ready(function() {
+			  <!-- als document gedaan is met laden, meteen het script verbergen-->
              $('#script').hide('fast');
+			 <!--functie die transcript kan tonen en verbergen-->
              $('#linkScript').on("click",tonenVerbergen);
+			 <!--functie die naar boven naar de pagina kan scrollen-->
              $('#up').on('click',scroll);
            }
                             );
@@ -212,22 +224,21 @@
          function tonenVerbergen(){
            if(script=='1'){
              $('#script').show('slow');
-             <!--variabele naar nul zetten zodat het de volgende keer terug verbergt-->
+             <!--variabele naar nul zetten zodat het de volgende keer verbergt-->
                script = '0';
            }
            else {
              $('#script').hide('slow');
+			 <!--variabele naar nul zetten zodat het de volgende keer toont-->
              script = '1';
            }
          };
             
 			<!--functie om naar boven te scrollen-->
 			function scroll(){          
-         
-         $('html').animate({scrollTop:0}, 'slow');//IE, FF
-         $('body').animate({scrollTop:0}, 'slow');//chrome
-         
-         
+         		$('html').animate({scrollTop:0}, 'slow');//IE, FF
+         		$('body').animate({scrollTop:0}, 'slow');//chrome
+ 
          };
       </script>
    </body>

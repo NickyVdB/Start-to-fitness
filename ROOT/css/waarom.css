@@ -1,14 +1,17 @@
 /* Scss Document */
+/*opmaak voor canvas*/
 #weegschaal {
   height: auto;
   width: 100%; }
 
+/*opmaak voor knop tonen*/
 #tonen {
   background-color: seagreen;
   color: white;
   border-bottom: 5px solid seagreen;
   text-shadow: 0px -1px #006600; }
 
+/*opmaak voor knop verbergen*/
 #verbergen {
   background-color: #cc0000;
   color: white;
