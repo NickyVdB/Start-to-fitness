@@ -56,7 +56,7 @@
 				<p>Deze site is gemaakt om jou te helpen bij de juiste keuzes te maken als je gaat fitnessen. We helpen je niet alleen bij waar en hoe je kan fitnessen maar ook welke voedselkeuzes hier het beste bij passen. Als je optimale resultaten wilt behalen, is namelijk ook voeding belangrijk, al ligt hier niet de nadruk op op deze site. We gaan u vooral helpen beslissen waar u kan fitnessen (je hoeft hier niet per se een abonnement in een fitnesscentrum voor op te nemen!), wat u hiervoor nodig hebt, fitnessschema’s en nog veel meer.</p>
 				<p>Hopelijk bent u zo gemotiveerd als ons en bent u klaar om aan uw gezondheid te werken! Want alles kan beter!</p></div>
 			</article>
-       <div class="animatie table-responsive">
+       <div id="animatie" class="animatie table-responsive">
             <section class="wereld">
          <div class="gebouw een"></div>
          <div class="gebouw twee"></div>
@@ -103,6 +103,10 @@
          </div>
          </section>
          </div>
+          <div>
+         	<button id="verberg">Verberg</button>
+            <button id="tonen">Tonen</button>
+         </div>
 			<!--footer-->
 			<footer class="footer">
             	<div class="row">
@@ -121,12 +125,21 @@
 <script>
   $(document).ready(
         function(){
-           
+          $("#verberg").on("click",verberg);
+		  $("#tonen").on("click",tonen);
               $("#up").on("click",scroll);
                    }
               
   );
     
+	function verberg() {
+		         $("#animatie").hide(); 
+         };
+
+	function tonen() {
+		         $("#animatie").show(); 
+         };
+
   
    function scroll(){
 
