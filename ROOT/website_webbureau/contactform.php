@@ -35,26 +35,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="http://r0374251.sinners.be/website_webbureau/index.html">Vimani Webdesign</a>
+                <a class="navbar-brand page-scroll" href="http://r0374251.sinners.be/ROOT/website_webbureau/index.html">Vimani Webdesign</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="http://r0374251.sinners.be/website_webbureau/index.html"></a>
+                        <a href="http://r0374251.sinners.be/ROOT/website_webbureau/index.html"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://r0374251.sinners.be/website_webbureau/index.html#services">Wat doen wij?</a>
+                        <a class="page-scroll" href="http://r0374251.sinners.be/ROOT/website_webbureau/index.html#services">Wat doen wij?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://r0374251.sinners.be/website_webbureau/index.html#portfolio">Projecten</a>
+                        <a class="page-scroll" href="http://r0374251.sinners.be/ROOT/website_webbureau/index.html#portfolio">Projecten</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://r0374251.sinners.be/website_webbureau/index.html#team">Team</a>
+                        <a class="page-scroll" href="http://r0374251.sinners.be/ROOT/website_webbureau/index.html#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://r0374251.sinners.be/website_webbureau/index.html#contact">Contact</a>
+                        <a class="page-scroll" href="http://r0374251.sinners.be/ROOT/website_webbureau/index.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@
             <p>Uw bericht: <?php echo $_REQUEST["message"]; ?></p>
             <h2>Bedankt voor uw bericht! Wij trachten deze zo snel mogelijk te beantwoorden!</h2>
                 
-                <a href="http://r0374251.sinners.be/website_webbureau/index.html" class="page-scroll btn btn-xl">Terug naar hoofdpagina</a>
+                <a href="http://r0374251.sinners.be/ROOT/website_webbureau/index.html" class="page-scroll btn btn-xl">Terug naar hoofdpagina</a>
             </div>
         </div>
     </header>

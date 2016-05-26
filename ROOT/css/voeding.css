@@ -13,7 +13,6 @@
     background-image: url(../Images/Marijke/eatme.png); }
   to {
     background-image: url(../Images/Marijke/carrot.png); } }
-	
 /*wat er gebeurt met de animatie*/
 .animatie:hover {
   animation-name: veranderen;
@@ -27,5 +26,17 @@
 
 #winnaar:hover {
   font-size: 50px; }
+
+#tekenen {
+  background-color: seagreen;
+  color: white;
+  border-bottom: 5px solid seagreen;
+  text-shadow: 0px -1px #006600; }
+
+#wissen {
+  background-color: #cc0000;
+  color: white;
+  border-bottom: 5px solid #cc0000;
+  text-shadow: 0px -1px #990000; }
 
 /*# sourceMappingURL=voeding.css.map */

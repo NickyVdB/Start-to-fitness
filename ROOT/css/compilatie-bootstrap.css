@@ -4757,4 +4757,17 @@ a {
 nav a {
   text-decoration: none; }
 
+.custombtn {
+  width: 120px;
+  height: 40px;
+  padding: 2.5 px 10px;
+  margin-left: 0;
+  border-radius: 10px;
+  font-family: 'Helvetica', cursive;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9; }
+
 /*# sourceMappingURL=compilatie-bootstrap.css.map */

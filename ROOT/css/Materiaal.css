@@ -9,19 +9,8 @@
   border-style: solid;
   height: 150px; }
 
-#wissen {
-  width: 120px;
-  height: 40px;
-  padding: 2.5 px 10px;
-  margin-left: 0;
-  border-radius: 10px;
-  font-family: 'Pacifico', cursive;
-  font-size: 20px;
+.custombtn {
   color: #FFF;
-  text-decoration: none;
-  background-color: #3498DB;
-  border-bottom: 5px solid #2980B9;
-  text-shadow: 0px -2px #2980B9;
   transition: width 2s, height 2s, background-color 2s, border-bottom 2s, text-shadow 2s; }
 
 #wissen:hover {
