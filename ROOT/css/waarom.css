@@ -3,4 +3,16 @@
   height: auto;
   width: 100%; }
 
+#tonen {
+  background-color: seagreen;
+  color: white;
+  border-bottom: 5px solid seagreen;
+  text-shadow: 0px -1px #006600; }
+
+#verbergen {
+  background-color: #cc0000;
+  color: white;
+  border-bottom: 5px solid #cc0000;
+  text-shadow: 0px -1px #990000; }
+
 /*# sourceMappingURL=waarom.css.map */
