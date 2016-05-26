@@ -3,6 +3,9 @@
 
 $kleurstokman: #333333;
 
+$kleurTonen: seagreen;
+$kleurVerbergen: #cc0000;
+
 body {
   background: white;
   font-family: sans-serif;
@@ -345,3 +348,17 @@ section.wereld div {
     transform: rotate(120deg);
   }
 }
+
+/*button css*/
+/*opmaak voor knop tonen*/
+#tonen{background-color: $kleurTonen;
+color:white;
+border-bottom: 5px solid $kleurTonen;
+text-shadow: 0px -1px #006600;
+}
+
+/*opmaak voor knop verbergen*/
+#verberg{background-color: $kleurVerbergen;
+color:white;
+border-bottom: 5px solid $kleurVerbergen;
+text-shadow: 0px -1px #990000;}

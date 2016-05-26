@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/compilatie-bootstrap.css">
       <link rel="stylesheet" href="css/Materiaal.css">
       <link rel="stylesheet" href="css/magic.css">
+      <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <title>Start to fitness | Materiaal</title>
    </head>
@@ -91,7 +92,7 @@
                   <div class= "col-sm-12 col-md-12 col-lg-12">
                      <canvas id ="canvas">
                      </canvas>
-                     <button id="wissen" class="custombtn">leegmaken</button>
+                     <p><button id="tonen" class="custombtn">tonen</button><button id="wissen" class="custombtn">leegmaken</button></p>
                   </div>
                </div>
                <div class="row">
@@ -134,7 +135,7 @@
                                        tekenen();   
                                        $("#up").on("click",scroll);
                                        $("#wissen").on("click",wissen);
-             
+                                       $("#tonen").on("click",tekenen);
                                        setTimeout(function(){
                                        $('#matje').addClass('magictime boingInUp');
                                        }, 3000);
@@ -148,7 +149,7 @@
              var context = element.getContext('2d');
              context.lineWidth= 4;
              context.strokeStyle="black";
-             
+          
              for(var teller=10;teller<(element.width); teller+=element.width/5)
              {
                  
@@ -159,10 +160,10 @@
                    context.rect(teller + element.width/8,element.height/4,element.width/1000,element.height-70);
                    context.rect(teller + element.width/6.9 ,element.height/3,element.width/1000,element.height-100);
              }
-                 
+                  
              context.stroke();
              
-         
+            
              
          }
          function wissen()

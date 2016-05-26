@@ -1,4 +1,5 @@
-
+$kleurTonen: seagreen;
+$kleurWissen: #3498DB;
 #halter img{
     margin-top: 8%;
 }
@@ -17,3 +18,16 @@
               background-color: #B20000;
               border-bottom: 5px solid #B20000;
               text-shadow: 0px -2px #B20000;}
+/*button css*/
+/*opmaak voor knop tonen*/
+#tonen{background-color: $kleurTonen;
+color:white;
+border-bottom: 5px solid $kleurTonen;
+text-shadow: 0px -1px #006600;
+}
+
+/*opmaak voor knop verbergen*/
+#wissen{background-color: $kleurWissen;
+color:white;
+border-bottom: 5px solid $kleurWissen;
+text-shadow: 0px -1px #990000;}

@@ -20,4 +20,19 @@
   border-bottom: 5px solid #B20000;
   text-shadow: 0px -2px #B20000; }
 
+/*button css*/
+/*opmaak voor knop tonen*/
+#tonen {
+  background-color: seagreen;
+  color: white;
+  border-bottom: 5px solid seagreen;
+  text-shadow: 0px -1px #006600; }
+
+/*opmaak voor knop verbergen*/
+#wissen {
+  background-color: #3498DB;
+  color: white;
+  border-bottom: 5px solid #3498DB;
+  text-shadow: 0px -1px #990000; }
+
 /*# sourceMappingURL=Materiaal.css.map */
