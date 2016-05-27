@@ -15,6 +15,8 @@ body {
 
 }
 
+
+/*volledige animatie uitlijnen*/
 .animatie {
 	padding: 20px;
 	margin:20px;
@@ -22,6 +24,7 @@ body {
 	align-content: center;
 }
 
+/*wereld: positie in de div*/
 section.wereld {
   position: relative;
   width: 500px;
@@ -38,12 +41,14 @@ section.wereld div {
   border-radius: 2px;
 }
 
+/*algemene opmaak van gebouw*/
 .gebouw {
   bottom: 0;
   right: -40%;
   background: rgba(0,0,0,0.50) !important;
 }
 
+/*opmaak van volgende gebouwen*/
 .gebouw.een {
   width: 30%;
   height: 8%;
@@ -68,6 +73,7 @@ section.wereld div {
   animation: elem 2.8s linear infinite 0.2s;
 }
 
+/*opmaak van grond in algemeen*/
 .grond {
 	background:green;
 	width: 100%;
@@ -75,12 +81,15 @@ section.wereld div {
   	bottom: 0;
 }
 
+/*opmaak van gras*/
 .grond .gras {
 	background:green;
   	width: 2px;
   	bottom: 0;
   	right: -2px;
 }
+
+/*opmaak van elke deel gras appart*/
 .grond .gras.een {
   height: 15px;
   animation: elem 3s linear infinite;
@@ -122,13 +131,14 @@ section.wereld div {
   animation: elem 3s linear infinite 1.8s;
 }
 
+/*opmaak wolk in algemeen*/
 .wolk {
   height: 20px;
   right: -160px;
   background: #91D9EB !important;
 }
 
-
+/*opmaak wolken appart*/
 .wolk.een {
   width: 90px;
   top: 50px;
@@ -150,6 +160,8 @@ section.wereld div {
   animation: wolk 3.2s linear infinite 1s;
 }
 
+
+/*opmaak stokman*/
 .stokman {
   width: 6px;
   height: 30px;
@@ -238,6 +250,8 @@ section.wereld div {
   animation: been-beneden 1s linear infinite 0.5s;
 }
 
+
+/*opmaak hamburger*/
 .hamburger {
 	background-color:white;
 	margin: 0 auto;

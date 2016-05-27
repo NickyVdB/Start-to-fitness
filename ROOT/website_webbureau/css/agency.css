@@ -8,11 +8,15 @@ body {
 .text-primary {
     color: #1ad3f1
 }
+
+/*label gevormd om fluid labels te kunnen maken*/
 label {
   position: relative;
   max-width:auto;
   display: inline-block;
 }
+
+/*span waarin de tekst wordt gezet wanneer er iets wordt ingevuld in het tekstvak*/
 label span {
   position: absolute;
   left: 20px;
@@ -23,6 +27,7 @@ label span {
   transition: all 150ms ease;
 }
 
+/*lay-out van het label en de span als er niets ingevuld is*/
 label.empty input {
   border-color: #999999;
 }
@@ -34,20 +39,29 @@ label.empty span {
   color: #999999;
 }
 
+/*border van de input*/
 input {
   border: 2px solid #f2f2f2;
   max-width:auto;
   outline: none;
 }
+
+/*border kleur wanneer de focus op de input geplaatst wordt*/
 input:focus {
   border-color: #1093A7;
 }
+
+/*border kleur bij valide input*/
 input:valid {
   border-color: #42d142;
 }
+
+/*border kleur bij invalide input*/
 input:invalid {
   border-color: #ff8e7a;
 }
+
+/*uitlijning van het form*/
 form {
   margin: auto;
 }
