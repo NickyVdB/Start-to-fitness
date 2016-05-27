@@ -24,14 +24,14 @@ label span {
 }
 
 label.empty input {
-  border-color: #d9d9d9;
+  border-color: #999999;
 }
 label.empty span {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1em;
   background: none;
-  color: #cccccc;
+  color: #999999;
 }
 
 input {
@@ -40,7 +40,7 @@ input {
   outline: none;
 }
 input:focus {
-  border-color: #d9d9d9;
+  border-color: #1093A7;
 }
 input:valid {
   border-color: #42d142;
