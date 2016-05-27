@@ -1,9 +1,14 @@
 $kleurTonen: seagreen;
 $kleurWissen: #3498DB;
-#halter img{
-    margin-top: 8%;
-}
-#halter{text-align: center;}
+$kleurWissenHover:#B20000;
+$kleurTextshadowWissen:#990000;
+$kleurTextshadowTekenen: #006600;
+ 
+#halter{text-align: center;
+            img{
+                margin-top: 8%;
+                }
+        }
 #canvas{
     width: 100%;
     border-style: solid;
@@ -13,21 +18,24 @@ $kleurWissen: #3498DB;
 .custombtn{color: #FFF; 
     transition: width 2s, height 2s, background-color 2s, border-bottom 2s,text-shadow 2s ;}
 
-#wissen:hover{width:150px;
-              height: 70px;
-              background-color: #B20000;
-              border-bottom: 5px solid #B20000;
-              text-shadow: 0px -2px #B20000;}
+
 /*button css*/
 /*opmaak voor knop tonen*/
 #tonen{background-color: $kleurTonen;
 color:white;
 border-bottom: 5px solid $kleurTonen;
-text-shadow: 0px -1px #006600;
+text-shadow: 0px -1px $kleurTextshadowTekenen;
 }
 
 /*opmaak voor knop verbergen*/
 #wissen{background-color: $kleurWissen;
 color:white;
 border-bottom: 5px solid $kleurWissen;
-text-shadow: 0px -1px #990000;}
+text-shadow: 0px -1px $kleurTextshadowWissen;
+    &:hover{width:150px;
+              height: 70px;
+              background-color: $kleurWissenHover;
+              border-bottom: 5px solid $kleurWissenHover;
+              text-shadow: 0px -2px $kleurWissenHover;
+           }
+}
