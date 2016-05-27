@@ -14,7 +14,7 @@ $kleurTextshadowTekenen: #006600;
     border-style: solid;
     height : 150px;
 }
-
+/*transition voor hover verwijderen knop*/
 .custombtn{color: #FFF; 
     transition: width 2s, height 2s, background-color 2s, border-bottom 2s,text-shadow 2s ;}
 
