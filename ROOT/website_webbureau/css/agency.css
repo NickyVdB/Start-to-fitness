@@ -612,16 +612,30 @@ section#contact .section-heading {
 section#contact .form-group {
     margin-bottom: 25px
 }
+
+/*padding voor naam en e-mailadres*/
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px
+    padding: 40px
 }
 section#contact .form-group input.form-control {
     height: auto
 }
+/*hoogte en breedte instellen van berichtvenster*/
 section#contact .form-group textarea.form-control {
-    height: 236px
+    height: 245px;
+
 }
+/*placeholder vanboven zetten*/
+textarea#message.form-control::-moz-placeholder{
+	vertical-align:top;
+	}
+
+/*breedte van alle invoervensters bepalen*/
+.form-control{
+	width:470px;
+	
+	}
 section#contact .form-control:focus {
     border-color: #1ad3f1;
     box-shadow: none
