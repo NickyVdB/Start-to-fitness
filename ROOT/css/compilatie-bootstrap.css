@@ -4738,7 +4738,8 @@ header h1 {
   font-family: 'Lobster' , serif; }
 
 p {
-  font-family: 'Droid Sans', sans-serif; }
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 18px; }
 
 /*opmaak footer*/
 .footer {
